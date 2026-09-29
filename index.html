@@ -1,0 +1,5111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <!-- ==========================================
+         CONFIGURACIÓN DEL DOCUMENTO
+    =========================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Cuestionario de Tamizaje de Riesgos Psicosociales
+    </title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+
+<body>
+
+    <main class="container-fluid">
+
+        <div class="container formulario-container">
+
+            <header class="encabezado-formulario">
+                <!-- LOGO CMC -->
+
+                <div class="encabezado-logo">
+
+                    <img src="assets/logo-cmc.png" alt="Centro Médico Cognitivo e Investigación">
+
+                </div>
+
+                <div class="encabezado-contenido">
+
+                    <div class="encabezado-texto">
+
+                        <h1>
+                            Cuestionario de Tamizaje de Riesgos Psicosociales
+                        </h1>
+
+                        <p class="subtitulo-formulario">
+                            Seguimiento integral del neurodesarrollo
+                        </p>
+
+                        <p class="area-formulario">
+                            Trabajo Social – Programa de Neurodesarrollo
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+            <form id="formularioTamizaje">
+
+
+                <!-- ==========================================
+                 SESIÓN 1
+                 IDENTIFICACIÓN Y CONTACTO
+            =========================================== -->
+
+                <details>
+
+                    <summary>
+                        1. Identificación y contacto
+                    </summary>
+
+                    <!-- ==========================================
+                         FECHA DE APLICACIÓN
+                      =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            Fecha de aplicación
+                        </h3>
+
+                        <div>
+
+                            <label for="fecha_aplicacion">
+                                Fecha de aplicación
+                            </label>
+
+                            <input type="date" id="fecha_aplicacion" name="fecha_aplicacion">
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         1.2 SEDE DE ATENCIÓN
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            Sede de atención
+                        </h3>
+
+                        <label for="sede_atencion">
+                            Sede de atención
+                        </label>
+
+                        <select id="sede_atencion" name="sede_atencion">
+
+                            <option value="">
+                                Seleccione una sede
+                            </option>
+
+                            <option value="sede_15_soledad">
+                                Sede 15 Soledad
+                            </option>
+
+                            <option value="sede_52_barranquilla">
+                                Sede 52 Barranquilla
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         1.3 MOMENTO DE ATENCIÓN
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            Momento de atención
+                        </h3>
+
+                        <label for="momento_atencion">
+                            Momento de atención
+                        </label>
+
+                        <select id="momento_atencion" name="momento_atencion">
+
+                            <option value="">
+                                Seleccione el momento de atención
+                            </option>
+
+                            <option value="linea_base">
+                                Línea Base
+                            </option>
+
+                            <option value="seguimiento_1">
+                                Seguimiento 1
+                            </option>
+
+                            <option value="seguimiento_2">
+                                Seguimiento 2
+                            </option>
+
+                            <option value="postintervencion">
+                                Postintervención
+                            </option>
+
+                            <option value="seguimiento_anual">
+                                Seguimiento anual
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         1.4 NOMBRE Y FECHA DE NACIMIENTO
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            Información del niño o la niña
+                        </h3>
+
+                        <div>
+
+                            <label for="nombre_completo">
+                                Nombre completo del niño o la niña
+                            </label>
+
+                            <input type="text" id="nombre_completo" name="nombre_completo"
+                                placeholder="Ingrese el nombre completo">
+
+                        </div>
+
+
+                        <div>
+
+                            <label for="fecha_nacimiento">
+                                Fecha de nacimiento
+                            </label>
+
+                            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         1.5 TIPO Y NÚMERO DE IDENTIFICACIÓN
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            Tipo y número de identificación
+                        </h3>
+
+                        <div>
+
+                            <label for="tipo_identificacion">
+                                Tipo de identificación
+                            </label>
+
+                            <select id="tipo_identificacion" name="tipo_identificacion">
+
+                                <option value="">
+                                    Seleccione un tipo de identificación
+                                </option>
+
+                                <option value="rc">
+                                    Registro civil
+                                </option>
+
+                                <option value="ti">
+                                    Tarjeta de identidad
+                                </option>
+
+                                <option value="pt">
+                                    Permiso por protección temporal
+                                </option>
+
+                            </select>
+                        </div>
+
+
+                        <div>
+
+                            <label for="numero_identificacion">
+                                Número de identificación
+                            </label>
+
+                            <input type="text" id="numero_identificacion" name="numero_identificacion"
+                                placeholder="Ingrese el número de identificación">
+
+                        </div>
+
+
+                        <p>
+                            Si no tiene documento, indíquelo al equipo.
+                            La edad en años y meses se calcula a partir de la fecha de nacimiento.
+                        </p>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         1.6 CIUDAD, MUNICIPIO Y BARRIO
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            Lugar de residencia
+                        </h3>
+
+                        <div>
+
+                            <label for="ciudad_municipio">
+                                Ciudad o municipio donde vive actualmente
+                            </label>
+
+                            <input type="text" id="ciudad_municipio" name="ciudad_municipio"
+                                placeholder="Ingrese la ciudad o municipio">
+
+                        </div>
+
+
+                        <div>
+
+                            <label for="barrio">
+                                Barrio
+                            </label>
+
+                            <input type="text" id="barrio" name="barrio" placeholder="Ingrese el barrio">
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         1.7 GEOREFERENCIACIÓN POR BARRIO
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            Georreferenciación por barrio
+                        </h3>
+
+                        <div>
+
+                            <label for="localidad_comuna">
+                                Localidad/comuna
+                            </label>
+
+                            <input type="text" id="localidad_comuna" name="localidad_comuna"
+                                placeholder="Ingrese la localidad o comuna">
+
+                        </div>
+
+
+                        <div>
+
+                            <label for="sector_zona">
+                                Sector/zona
+                            </label>
+
+                            <input type="text" id="sector_zona" name="sector_zona"
+                                placeholder="Ingrese el sector o zona">
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         1.8 PERSONA QUE RESPONDE
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            Persona que responde
+                        </h3>
+
+                        <div>
+
+                            <label for="nombre_responde">
+                                Nombre completo de quien responde
+                            </label>
+
+                            <input type="text" id="nombre_responde" name="nombre_responde"
+                                placeholder="Ingrese el nombre completo">
+
+                        </div>
+
+
+                        <div>
+
+                            <label for="parentesco">
+                                Parentesco con el niño o la niña
+                            </label>
+
+                            <input type="text" id="parentesco" name="parentesco" placeholder="Ingrese el parentesco">
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         1.9 CELULARES
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            Datos de contacto
+                        </h3>
+
+                        <div>
+
+                            <label for="celular_principal">
+                                Celular principal
+                            </label>
+
+                            <input type="tel" id="celular_principal" name="celular_principal"
+                                placeholder="Ingrese el celular principal">
+
+                        </div>
+
+
+                        <div>
+
+                            <label for="celular_respaldo">
+                                Celular de respaldo
+                            </label>
+
+                            <input type="tel" id="celular_respaldo" name="celular_respaldo"
+                                placeholder="Ingrese el celular de respaldo">
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         1.10 RÉGIMEN DE AFILIACIÓN EN SALUD
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            Régimen de afiliación en salud
+                        </h3>
+
+                        <label for="regimen_salud">
+                            Régimen de afiliación en salud
+                        </label>
+
+                        <select id="regimen_salud" name="regimen_salud">
+
+                            <option value="">
+                                Seleccione una opción
+                            </option>
+
+                            <option value="subsidiado">
+                                Subsidiado
+                            </option>
+
+                            <option value="contributivo">
+                                Contributivo
+                            </option>
+
+                            <option value="especial_excepcion">
+                                Especial o de excepción
+                            </option>
+
+                            <option value="no_sabe">
+                                No sabe
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         1.11 GRUPO ÉTNICO
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            Grupo étnico
+                        </h3>
+
+                        <p>
+                            ¿El niño o la niña pertenece a algún grupo étnico?
+                        </p>
+
+
+                        <div>
+
+                            <label>
+                                <input type="radio" name="grupo_etnico" value="no">
+                                No
+                            </label>
+
+                        </div>
+
+
+                        <div>
+
+                            <label>
+                                <input type="radio" name="grupo_etnico" value="si">
+                                Sí
+                            </label>
+
+                        </div>
+
+
+                        <div>
+
+                            <label for="grupo_etnico_cual">
+                                Si respondió sí, ¿cuál?
+                            </label>
+
+                            <input type="text" id="grupo_etnico_cual" name="grupo_etnico_cual"
+                                placeholder="Especifique el grupo étnico">
+
+                        </div>
+
+
+                        <div>
+
+                            <label>
+                                <input type="radio" name="grupo_etnico" value="no_sabe">
+                                No sabe
+                            </label>
+
+                        </div>
+
+
+                        <div>
+
+                            <label>
+                                <input type="radio" name="grupo_etnico" value="prefiere_no_responder">
+                                Prefiere no responder
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                </details>
+
+                </details>
+
+
+                <!-- ==========================================
+                 SESIÓN 2
+                 FAMILIA Y PERSONAS CUIDADORAS
+            =========================================== -->
+
+                <details>
+
+                    <summary>
+                        2. Familia y personas cuidadoras
+                    </summary>
+
+                    <!-- ==========================================
+         2.1 CONVIVENCIA HABITUAL
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            ¿Con quién vive habitualmente?
+                        </h3>
+
+                        <label for="convivencia_habitual">
+                            Seleccione una opción
+                        </label>
+
+                        <select id="convivencia_habitual" name="convivencia_habitual">
+
+                            <option value="">
+                                Seleccione una opción
+                            </option>
+
+                            <option value="madre_padre">
+                                Madre y padre
+                            </option>
+
+                            <option value="principalmente_madre">
+                                Principalmente con la madre
+                            </option>
+
+                            <option value="principalmente_padre">
+                                Principalmente con el padre
+                            </option>
+
+                            <option value="familia_extensa">
+                                Familia extensa
+                            </option>
+
+                            <option value="familia_acogida_institucion">
+                                Familia de acogida o institución
+                            </option>
+
+                            <option value="otra_situacion">
+                                Otra situación
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         2.2 PERSONAS EN EL HOGAR
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            Personas que viven en el hogar
+                        </h3>
+
+                        <div>
+
+                            <label for="personas_hogar">
+                                ¿Cuántas personas viven en el hogar,
+                                incluido el niño o la niña?
+                            </label>
+
+                            <input type="number" id="personas_hogar" name="personas_hogar" min="0"
+                                placeholder="Ingrese la cantidad">
+
+                        </div>
+
+
+                        <div>
+
+                            <label for="menores_18_hogar">
+                                ¿Cuántas son menores de 18 años?
+                            </label>
+
+                            <input type="number" id="menores_18_hogar" name="menores_18_hogar" min="0"
+                                placeholder="Ingrese la cantidad">
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         2.3 HERMANOS
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            Hermanos
+                        </h3>
+
+                        <div>
+
+                            <label for="cantidad_hermanos">
+                                ¿Cuántos hermanos tiene?
+                            </label>
+
+                            <input type="number" id="cantidad_hermanos" name="cantidad_hermanos" min="0"
+                                placeholder="Ingrese la cantidad">
+
+                        </div>
+
+
+                        <div>
+
+                            <p>
+                                ¿Convive con alguno de ellos?
+                            </p>
+
+
+                            <label>
+                                <input type="radio" name="convive_hermanos" value="si">
+                                Sí
+                            </label>
+
+
+                            <label>
+                                <input type="radio" name="convive_hermanos" value="no">
+                                No
+                            </label>
+
+
+                            <label>
+                                <input type="radio" name="convive_hermanos" value="no_aplica">
+                                No aplica
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         2.4 MADRE, PADRE O REFERENTES FAMILIARES
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            Madre, padre o referentes familiares
+                        </h3>
+
+                        <label for="referentes_familiares">
+                            Nombre de la madre y del padre o referentes
+                            familiares, si la familia desea registrarlos
+                        </label>
+
+                        <input type="text" id="referentes_familiares" name="referentes_familiares"
+                            placeholder="Ingrese los nombres si desea registrarlos">
+
+                    </div>
+
+
+                    <!-- ==========================================
+         2.5 NIVEL EDUCATIVO
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            Nivel educativo de la persona cuidadora principal
+                        </h3>
+
+                        <label for="nivel_educativo_cuidador">
+                            Nivel educativo más alto completado por la
+                            persona cuidadora principal
+                        </label>
+
+                        <select id="nivel_educativo_cuidador" name="nivel_educativo_cuidador">
+
+                            <option value="">
+                                Seleccione una opción
+                            </option>
+
+                            <option value="ninguno">
+                                Ninguno
+                            </option>
+
+                            <option value="primaria_incompleta_completa">
+                                Primaria incompleta o completa
+                            </option>
+
+                            <option value="secundaria_incompleta">
+                                Secundaria incompleta
+                            </option>
+
+                            <option value="bachillerato">
+                                Bachillerato
+                            </option>
+
+                            <option value="tecnica_tecnologica">
+                                Técnica o tecnológica
+                            </option>
+
+                            <option value="universidad">
+                                Universidad
+                            </option>
+
+                            <option value="posgrado">
+                                Posgrado
+                            </option>
+
+                            <option value="no_sabe">
+                                No sabe
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         2.6 AMBIENTE EN CASA
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            Ambiente en casa
+                        </h3>
+
+                        <p>
+                            En general, ¿cómo describiría el ambiente en casa?
+                        </p>
+
+
+                        <label>
+                            <input type="radio" name="ambiente_casa" value="muy_tranquilo">
+                            Muy tranquilo
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="ambiente_casa" value="bastante_tranquilo">
+                            Bastante tranquilo
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="ambiente_casa" value="cambiante">
+                            Cambiante
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="ambiente_casa" value="dificil">
+                            Difícil
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="ambiente_casa" value="muy_dificil">
+                            Muy difícil
+                        </label>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         2.7 DISCUSIONES IMPORTANTES
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            Discusiones importantes en casa
+                        </h3>
+
+                        <p>
+                            ¿Con qué frecuencia hay discusiones importantes
+                            en casa?
+                        </p>
+
+
+                        <label>
+                            <input type="radio" name="frecuencia_discussiones" value="nunca">
+                            Nunca
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="frecuencia_discussiones" value="algunas_veces_mes">
+                            Algunas veces al mes
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="frecuencia_discussiones" value="varias_veces_semana">
+                            Varias veces a la semana
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="frecuencia_discussiones" value="casi_todos_los_dias">
+                            Casi todos los días
+                        </label>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         2.8 APOYO ANTE DIFICULTAD EMOCIONAL
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            Apoyo ante dificultades emocionales
+                        </h3>
+
+                        <p>
+                            Cuando usted pasa por una dificultad emocional,
+                            ¿cuánto apoyo siente que tiene?
+                        </p>
+
+
+                        <label>
+                            <input type="radio" name="apoyo_dificultad_emocional" value="mucho">
+                            Mucho
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="apoyo_dificultad_emocional" value="algo">
+                            Algo
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="apoyo_dificultad_emocional" value="poco">
+                            Poco
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="apoyo_dificultad_emocional" value="ninguno">
+                            Ninguno
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="apoyo_dificultad_emocional" value="prefiere_no_responder">
+                            Prefiere no responder
+                        </label>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         2.9 RED DE APOYO PARA CUIDAR AL NIÑO O LA NIÑA
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            Red de apoyo para el cuidado
+                        </h3>
+
+                        <p>
+                            Si tuviera una urgencia, ¿con cuántas personas
+                            de confianza podría contar para cuidar al niño
+                            o la niña?
+                        </p>
+
+
+                        <label>
+                            <input type="radio" name="personas_confianza_cuidado" value="ninguna">
+                            Ninguna
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="personas_confianza_cuidado" value="una">
+                            Una
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="personas_confianza_cuidado" value="dos">
+                            Dos
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="personas_confianza_cuidado" value="tres_o_mas">
+                            Tres o más
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="personas_confianza_cuidado" value="no_sabe">
+                            No sabe
+                        </label>
+
+                    </div>
+
+
+
+                </details>
+
+
+                <!-- ==========================================
+                 SESIÓN 3
+                 EDUCACIÓN Y NECESIDADES DE APRENDIZAJE
+            =========================================== -->
+
+                <details>
+
+                    <summary>
+                        3. Educación y necesidades de aprendizaje
+                    </summary>
+
+                    <!-- ==========================================
+         3.1 ASISTENCIA A INSTITUCIÓN EDUCATIVA
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            ¿Actualmente asiste a jardín, colegio u otra
+                            institución educativa?
+                        </h3>
+
+                        <label>
+                            <input type="radio" name="asiste_institucion_educativa" value="si">
+                            Sí
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="asiste_institucion_educativa" value="no">
+                            No
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="asiste_institucion_educativa" value="proceso_ingreso">
+                            Está en proceso de ingreso
+                        </label>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         3.2 INSTITUCIÓN EDUCATIVA Y MUNICIPIO
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            Institución educativa
+                        </h3>
+
+                        <p>
+                            Solo si asiste o está en proceso; de lo contrario,
+                            omitir.
+                        </p>
+
+
+                        <div>
+
+                            <label for="institucion_educativa">
+                                Nombre de la institución educativa
+                            </label>
+
+                            <input type="text" id="institucion_educativa" name="institucion_educativa"
+                                placeholder="Ingrese el nombre de la institución">
+
+                        </div>
+
+
+                        <div>
+
+                            <label for="municipio_institucion">
+                                Municipio
+                            </label>
+
+                            <input type="text" id="municipio_institucion" name="municipio_institucion"
+                                placeholder="Ingrese el municipio">
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         3.3 GRADO ACTUAL
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            Grado que cursa actualmente
+                        </h3>
+
+                        <p>
+                            Solo si está escolarizado.
+                        </p>
+
+
+                        <label for="grado_actual">
+                            Grado actual
+                        </label>
+
+                        <select id="grado_actual" name="grado_actual">
+
+                            <option value="">
+                                Seleccione una opción
+                            </option>
+
+                            <option value="parvulos">
+                                Párvulos
+                            </option>
+
+                            <option value="prejardin">
+                                Prejardín
+                            </option>
+
+                            <option value="jardin">
+                                Jardín
+                            </option>
+
+                            <option value="transicion">
+                                Transición
+                            </option>
+
+                            <option value="1_11">
+                                1.º a 11.º
+                            </option>
+
+                            <option value="tecnica_tecnologica_universidad">
+                                Técnica, tecnológica o universidad
+                            </option>
+
+                            <option value="no_aplica">
+                                No aplica
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         3.4 ÚLTIMO GRADO APROBADO O CURSADO
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            Último grado aprobado o cursado
+                        </h3>
+
+
+                        <label for="ultimo_grado_aprobado_cursado">
+                            Último grado aprobado o cursado
+                        </label>
+
+                        <input type="text" id="ultimo_grado_aprobado_cursado" name="ultimo_grado_aprobado_cursado"
+                            placeholder="Ingrese el último grado">
+
+                    </div>
+
+
+                    <!-- ==========================================
+         3.5 ÁREAS CON MAYORES DIFICULTADES
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            Áreas con mayores dificultades
+                        </h3>
+
+                        <p>
+                            ¿En cuáles áreas observa mayores dificultades?
+                            Puede marcar varias.
+                        </p>
+
+
+                        <label>
+                            <input type="checkbox" name="areas_dificultades[]" value="lenguaje_comunicacion">
+                            Lenguaje o comunicación
+                        </label>
+
+
+                        <label>
+                            <input type="checkbox" name="areas_dificultades[]" value="lectura">
+                            Lectura
+                        </label>
+
+
+                        <label>
+                            <input type="checkbox" name="areas_dificultades[]" value="escritura">
+                            Escritura
+                        </label>
+
+
+                        <label>
+                            <input type="checkbox" name="areas_dificultades[]" value="comprension_lectora">
+                            Comprensión lectora
+                        </label>
+
+
+                        <label>
+                            <input type="checkbox" name="areas_dificultades[]" value="matematicas">
+                            Matemáticas
+                        </label>
+
+
+                        <label>
+                            <input type="checkbox" name="areas_dificultades[]" value="atencion">
+                            Atención
+                        </label>
+
+
+                        <label>
+                            <input type="checkbox" name="areas_dificultades[]" value="conducta">
+                            Conducta
+                        </label>
+
+
+                        <label>
+                            <input type="checkbox" name="areas_dificultades[]" value="relacion_con_otros">
+                            Relación con otros
+                        </label>
+
+
+                        <label>
+                            <input type="checkbox" name="areas_dificultades[]" value="otra">
+                            Otra
+                        </label>
+
+
+                        <label>
+                            <input type="checkbox" name="areas_dificultades[]" value="ninguna">
+                            Ninguna de las anteriores
+                        </label>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         3.6 APOYOS O AJUSTES EN LA INSTITUCIÓN
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            Apoyos o ajustes en la institución educativa
+                        </h3>
+
+                        <p>
+                            ¿Cuenta con apoyos o ajustes en la institución
+                            educativa?
+                        </p>
+
+
+                        <label>
+                            <input type="radio" name="apoyos_ajustes_institucion" value="si">
+                            Sí
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="apoyos_ajustes_institucion" value="no">
+                            No
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="apoyos_ajustes_institucion" value="en_tramite">
+                            Están en trámite
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="apoyos_ajustes_institucion" value="no_sabe">
+                            No sabe
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="apoyos_ajustes_institucion" value="no_aplica">
+                            No aplica
+                        </label>
+
+
+                        <div>
+
+                            <label for="cuales_apoyos_ajustes">
+                                ¿Cuáles?
+                            </label>
+
+                            <input type="text" id="cuales_apoyos_ajustes" name="cuales_apoyos_ajustes"
+                                placeholder="Especifique los apoyos o ajustes">
+
+                        </div>
+
+                    </div>
+
+
+                </details>
+
+
+                <!-- ==========================================
+                 SESIÓN 4
+                 ATENCIÓN EN SALUD Y TERAPIAS
+            =========================================== -->
+
+                <details>
+
+                    <summary>
+                        4. Atención en salud y terapias
+                    </summary>
+
+                    <!-- ==========================================
+         4.1 ANTECEDENTES DE TERAPIAS
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            ¿Había asistido antes a terapias en CMC o en otra institución?
+                        </h3>
+
+                        <label>
+                            <input type="radio" name="asistido_terapias_antes" value="no">
+                            No
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="asistido_terapias_antes" value="si_cmc">
+                            Sí, en CMC
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="asistido_terapias_antes" value="si_otra_institucion">
+                            Sí, en otra institución
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="asistido_terapias_antes" value="no_sabe">
+                            No sabe
+                        </label>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         4.2 DIAGNÓSTICO O CONDICIÓN
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            ¿Qué diagnóstico o condición le han informado
+                            sobre el niño o la niña?
+                        </h3>
+
+                        <div>
+
+                            <label for="diagnostico_condicion">
+                                Respuesta breve
+                            </label>
+
+                            <textarea id="diagnostico_condicion" name="diagnostico_condicion" rows="3"
+                                placeholder="Escriba la respuesta"></textarea>
+
+                        </div>
+
+
+                        <label>
+                            <input type="radio" name="estado_diagnostico" value="aun_no_tiene_diagnostico">
+                            Aún no tiene diagnóstico
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="estado_diagnostico" value="no_sabe">
+                            No sabe
+                        </label>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         4.3 MEDICAMENTOS FORMULADOS
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            ¿Actualmente toma medicamentos formulados?
+                        </h3>
+
+
+                        <label>
+                            <input type="radio" name="toma_medicamentos" value="no">
+                            No
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="toma_medicamentos" value="si">
+                            Sí
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="toma_medicamentos" value="no_sabe">
+                            No sabe
+                        </label>
+
+
+                        <div>
+
+                            <label for="medicamento_nombre_indicacion">
+                                Si respondió sí: nombre o indicación, si la conoce
+                            </label>
+
+                            <input type="text" id="medicamento_nombre_indicacion" name="medicamento_nombre_indicacion"
+                                placeholder="Ingrese el nombre o indicación">
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         4.4 DIFICULTADES PARA CONSEGUIR MEDICAMENTOS
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            Dificultades para reclamar o conseguir medicamentos
+                        </h3>
+
+                        <p>
+                            En el último mes, ¿tuvo dificultades para reclamar
+                            o conseguir un medicamento formulado?
+                        </p>
+
+
+                        <label>
+                            <input type="radio" name="dificultad_conseguir_medicamento" value="si">
+                            Sí
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="dificultad_conseguir_medicamento" value="no">
+                            No
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="dificultad_conseguir_medicamento" value="no_aplica">
+                            No aplica
+                        </label>
+
+
+                        <div>
+
+                            <label for="tipo_dificultad_medicamento">
+                                Si respondió sí: ¿qué dificultad?
+                            </label>
+
+                            <textarea id="tipo_dificultad_medicamento" name="tipo_dificultad_medicamento" rows="3"
+                                placeholder="Describa la dificultad"></textarea>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         4.5 SUPLEMENTOS O PRODUCTOS NUTRICIONALES
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            ¿Toma suplementos o productos nutricionales?
+                        </h3>
+
+
+                        <label>
+                            <input type="radio" name="toma_suplementos" value="no">
+                            No
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="toma_suplementos" value="si">
+                            Sí
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="toma_suplementos" value="no_sabe">
+                            No sabe
+                        </label>
+
+
+                        <div>
+
+                            <label for="suplementos_productos_nutricionales">
+                                Si respondió sí: ¿cuáles?
+                            </label>
+
+                            <input type="text" id="suplementos_productos_nutricionales"
+                                name="suplementos_productos_nutricionales" placeholder="Ingrese cuáles">
+
+                        </div>
+
+                    </div>
+
+
+                </details>
+
+
+                <!-- ==========================================
+                 SESIÓN 5
+                 VIVIENDA Y RECURSOS PARA LA VIDA DIARIA
+            =========================================== -->
+
+                <details>
+
+                    <summary>
+                        5. Vivienda y recursos para la vida diaria
+                    </summary>
+
+                    <!-- ==========================================
+         5.1 TIPO DE VIVIENDA
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            ¿La vivienda donde vive actualmente la familia es?
+                        </h3>
+
+                        <label for="tipo_vivienda">
+                            Tipo de vivienda
+                        </label>
+
+                        <select id="tipo_vivienda" name="tipo_vivienda">
+
+                            <option value="">
+                                Seleccione una opción
+                            </option>
+
+                            <option value="propia_totalmente_pagada">
+                                Propia totalmente pagada
+                            </option>
+
+                            <option value="propia_la_estan_pagando">
+                                Propia, la están pagando
+                            </option>
+
+                            <option value="arrendada_alquilada">
+                                Arrendada o alquilada
+                            </option>
+
+                            <option value="familiar_prestada_sin_pago">
+                                Familiar o prestada sin pago
+                            </option>
+
+                            <option value="ocupacion_hecho_otra_situacion">
+                                Ocupación de hecho u otra situación
+                            </option>
+
+                            <option value="no_sabe">
+                                No sabe
+                            </option>
+
+                            <option value="prefiere_no_responder">
+                                Prefiere no responder
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         5.2 TIEMPO EN LA VIVIENDA
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            ¿Cuánto tiempo lleva viviendo la familia
+                            en esta vivienda?
+                        </h3>
+
+                        <div>
+
+                            <label for="tiempo_vivienda_meses">
+                                Meses
+                            </label>
+
+                            <input type="number" id="tiempo_vivienda_meses" name="tiempo_vivienda_meses" min="0"
+                                placeholder="Ingrese los meses">
+
+                        </div>
+
+
+                        <div>
+
+                            <label for="tiempo_vivienda_anios">
+                                Años
+                            </label>
+
+                            <input type="number" id="tiempo_vivienda_anios" name="tiempo_vivienda_anios" min="0"
+                                placeholder="Ingrese los años">
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         5.3 ESTRATO
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            ¿Qué estrato figura en los servicios públicos
+                            de la vivienda?
+                        </h3>
+
+                        <label for="estrato_vivienda">
+                            Estrato
+                        </label>
+
+                        <select id="estrato_vivienda" name="estrato_vivienda">
+
+                            <option value="">
+                                Seleccione una opción
+                            </option>
+
+                            <option value="1">
+                                1
+                            </option>
+
+                            <option value="2">
+                                2
+                            </option>
+
+                            <option value="3">
+                                3
+                            </option>
+
+                            <option value="4">
+                                4
+                            </option>
+
+                            <option value="5">
+                                5
+                            </option>
+
+                            <option value="6">
+                                6
+                            </option>
+
+                            <option value="no_estratificada">
+                                No está estratificada
+                            </option>
+
+                            <option value="no_sabe">
+                                No sabe
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         5.4 HABITACIONES PARA DORMIR
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            ¿Cuántas habitaciones se utilizan para dormir?
+                        </h3>
+
+                        <label for="habitaciones_dormir">
+                            Habitaciones
+                        </label>
+
+                        <input type="number" id="habitaciones_dormir" name="habitaciones_dormir" min="0"
+                            placeholder="Ingrese la cantidad">
+
+                    </div>
+
+
+                    <!-- ==========================================
+         5.5 DÓNDE DUERME EL NIÑO O LA NIÑA
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            ¿Dónde duerme el niño o la niña la mayoría
+                            de las noches?
+                        </h3>
+
+                        <label for="donde_duerme_nino">
+                            Situación para dormir
+                        </label>
+
+                        <select id="donde_duerme_nino" name="donde_duerme_nino">
+
+                            <option value="">
+                                Seleccione una opción
+                            </option>
+
+                            <option value="cuarto_propio">
+                                Cuarto propio
+                            </option>
+
+                            <option value="cuarto_compartido_cama_propia">
+                                Cuarto compartido y cama propia
+                            </option>
+
+                            <option value="cama_compartida">
+                                Cama compartida
+                            </option>
+
+                            <option value="cambia_con_frecuencia">
+                                Cambia con frecuencia
+                            </option>
+
+                            <option value="otra_situacion">
+                                Otra situación
+                            </option>
+
+                            <option value="prefiere_no_responder">
+                                Prefiere no responder
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         5.6 POSIBLE MUDANZA
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            ¿Cree que la familia podría tener que mudarse
+                            en los próximos seis meses por motivos que no
+                            puede controlar?
+                        </h3>
+
+
+                        <label>
+                            <input type="radio" name="posible_mudanza_seis_meses" value="si">
+                            Sí
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="posible_mudanza_seis_meses" value="no">
+                            No
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="posible_mudanza_seis_meses" value="no_sabe">
+                            No sabe
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="posible_mudanza_seis_meses" value="prefiere_no_responder">
+                            Prefiere no responder
+                        </label>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         5.7 ACCESO A INTERNET
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            ¿Con qué frecuencia hay acceso a internet en casa?
+                        </h3>
+
+                        <label for="frecuencia_internet">
+                            Acceso a internet
+                        </label>
+
+                        <select id="frecuencia_internet" name="frecuencia_internet">
+
+                            <option value="">
+                                Seleccione una opción
+                            </option>
+
+                            <option value="mayoria_dias">
+                                La mayoría de los días
+                            </option>
+
+                            <option value="a_veces_recargas">
+                                A veces o mediante recargas
+                            </option>
+
+                            <option value="sin_acceso">
+                                Sin acceso
+                            </option>
+
+                            <option value="no_sabe">
+                                No sabe
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         5.8 DIFICULTADES PARA PAGAR NECESIDADES
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            En los últimos 30 días, ¿con qué frecuencia fue
+                            difícil para la familia pagar alimentación,
+                            arriendo, servicios públicos o transporte?
+                        </h3>
+
+                        <label for="dificultad_pago_necesidades">
+                            Frecuencia
+                        </label>
+
+                        <select id="dificultad_pago_necesidades" name="dificultad_pago_necesidades">
+
+                            <option value="">
+                                Seleccione una opción
+                            </option>
+
+                            <option value="nunca">
+                                Nunca
+                            </option>
+
+                            <option value="1_3_dias">
+                                1 a 3 días
+                            </option>
+
+                            <option value="1_2_dias_semana">
+                                1 a 2 días por semana
+                            </option>
+
+                            <option value="3_5_dias_semana">
+                                3 a 5 días por semana
+                            </option>
+
+                            <option value="casi_todos_los_dias">
+                                Casi todos los días
+                            </option>
+
+                            <option value="prefiere_no_responder">
+                                Prefiere no responder
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         5.9 INSEGURIDAD ALIMENTARIA
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            En los últimos 30 días, ¿alguna persona del hogar
+                            dejó de comer antes de quedar satisfecha porque
+                            no había suficientes alimentos?
+                        </h3>
+
+                        <label for="dejo_comer_antes_satisfecha">
+                            Frecuencia
+                        </label>
+
+                        <select id="dejo_comer_antes_satisfecha" name="dejo_comer_antes_satisfecha">
+
+                            <option value="">
+                                Seleccione una opción
+                            </option>
+
+                            <option value="nunca">
+                                Nunca
+                            </option>
+
+                            <option value="1_3_dias">
+                                1 a 3 días
+                            </option>
+
+                            <option value="1_2_dias_semana">
+                                1 a 2 días por semana
+                            </option>
+
+                            <option value="3_5_dias_semana">
+                                3 a 5 días por semana
+                            </option>
+
+                            <option value="casi_todos_los_dias">
+                                Casi todos los días
+                            </option>
+
+                            <option value="prefiere_no_responder">
+                                Prefiere no responder
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         5.10 CONDICIONES DE LA VIVIENDA
+         REGISTRAR CADA SITUACIÓN POR SEPARADO
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            Condiciones de la vivienda en los últimos 12 meses
+                        </h3>
+
+                        <p>
+                            En los últimos 12 meses, ¿la vivienda presentó
+                            alguna de las siguientes situaciones?
+                        </p>
+
+
+                        <!-- Humedad o moho -->
+
+                        <div>
+
+                            <label for="humedad_moho">
+                                Humedad o moho
+                            </label>
+
+                            <select id="humedad_moho" name="humedad_moho">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="si">
+                                    Sí
+                                </option>
+
+                                <option value="no">
+                                    No
+                                </option>
+
+                                <option value="no_sabe">
+                                    No sabe
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Gotera -->
+
+                        <div>
+
+                            <label for="goteras">
+                                Gotera
+                            </label>
+
+                            <select id="goteras" name="goteras">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="si">
+                                    Sí
+                                </option>
+
+                                <option value="no">
+                                    No
+                                </option>
+
+                                <option value="no_sabe">
+                                    No sabe
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Inundación -->
+
+                        <div>
+
+                            <label for="inundacion">
+                                Inundación
+                            </label>
+
+                            <select id="inundacion" name="inundacion">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="si">
+                                    Sí
+                                </option>
+
+                                <option value="no">
+                                    No
+                                </option>
+
+                                <option value="no_sabe">
+                                    No sabe
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         5.11 CONDICIONES AMBIENTALES
+         REGISTRAR CADA SITUACIÓN POR SEPARADO
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            Condiciones ambientales en las últimas 4 semanas
+                        </h3>
+
+                        <p>
+                            En las últimas 4 semanas, ¿con qué frecuencia se
+                            presentaron las siguientes situaciones?
+                        </p>
+
+
+                        <!-- Insectos o roedores -->
+
+                        <div>
+
+                            <label for="insectos_roedores">
+                                Insectos o roedores
+                            </label>
+
+                            <select id="insectos_roedores" name="insectos_roedores">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="nunca">
+                                    Nunca
+                                </option>
+
+                                <option value="1_3_dias">
+                                    1 a 3 días
+                                </option>
+
+                                <option value="1_2_dias_semana">
+                                    1 a 2 días por semana
+                                </option>
+
+                                <option value="3_5_dias_semana">
+                                    3 a 5 días por semana
+                                </option>
+
+                                <option value="casi_todos_los_dias">
+                                    Casi todos los días
+                                </option>
+
+                                <option value="no_sabe">
+                                    No sabe
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Humo dentro de la vivienda -->
+
+                        <div>
+
+                            <label for="humo_vivienda">
+                                Humo dentro de la vivienda
+                            </label>
+
+                            <select id="humo_vivienda" name="humo_vivienda">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="nunca">
+                                    Nunca
+                                </option>
+
+                                <option value="1_3_dias">
+                                    1 a 3 días
+                                </option>
+
+                                <option value="1_2_dias_semana">
+                                    1 a 2 días por semana
+                                </option>
+
+                                <option value="3_5_dias_semana">
+                                    3 a 5 días por semana
+                                </option>
+
+                                <option value="casi_todos_los_dias">
+                                    Casi todos los días
+                                </option>
+
+                                <option value="no_sabe">
+                                    No sabe
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Calor que dificulta el sueño -->
+
+                        <div>
+
+                            <label for="calor_dificulta_sueno">
+                                Calor que dificultara el sueño
+                            </label>
+
+                            <select id="calor_dificulta_sueno" name="calor_dificulta_sueno">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="nunca">
+                                    Nunca
+                                </option>
+
+                                <option value="1_3_dias">
+                                    1 a 3 días
+                                </option>
+
+                                <option value="1_2_dias_semana">
+                                    1 a 2 días por semana
+                                </option>
+
+                                <option value="3_5_dias_semana">
+                                    3 a 5 días por semana
+                                </option>
+
+                                <option value="casi_todos_los_dias">
+                                    Casi todos los días
+                                </option>
+
+                                <option value="no_sabe">
+                                    No sabe
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </details>
+
+
+                <!-- ==========================================
+                 SESIÓN 6
+                 BARRIO Y CONDICIONES PARA APRENDER
+            =========================================== -->
+
+                <details>
+
+                    <summary>
+                        6. Barrio y condiciones para aprender
+                    </summary>
+
+                    <!-- ==========================================
+         6.1 SEGURIDAD DEL BARRIO
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            ¿Qué tan seguro considera el barrio durante el día
+                            y después de oscurecer?
+                        </h3>
+
+                        <p>
+                            Responda cada momento.
+                        </p>
+
+
+                        <!-- Durante el día -->
+
+                        <div>
+
+                            <label for="seguridad_barrio_dia">
+                                Durante el día
+                            </label>
+
+                            <select id="seguridad_barrio_dia" name="seguridad_barrio_dia">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="muy_seguro">
+                                    Muy seguro
+                                </option>
+
+                                <option value="seguro">
+                                    Seguro
+                                </option>
+
+                                <option value="inseguro">
+                                    Inseguro
+                                </option>
+
+                                <option value="muy_inseguro">
+                                    Muy inseguro
+                                </option>
+
+                                <option value="no_sabe">
+                                    No sabe
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Después de oscurecer -->
+
+                        <div>
+
+                            <label for="seguridad_barrio_noche">
+                                Después de oscurecer
+                            </label>
+
+                            <select id="seguridad_barrio_noche" name="seguridad_barrio_noche">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="muy_seguro">
+                                    Muy seguro
+                                </option>
+
+                                <option value="seguro">
+                                    Seguro
+                                </option>
+
+                                <option value="inseguro">
+                                    Inseguro
+                                </option>
+
+                                <option value="muy_inseguro">
+                                    Muy inseguro
+                                </option>
+
+                                <option value="no_sabe">
+                                    No sabe
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         6.2 JUEGO FUERA DE CASA / RUTAS / HORARIOS
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            En las últimas 4 semanas, ¿evitó el juego fuera
+                            de casa o cambió rutas u horarios por seguridad?
+                        </h3>
+
+                        <p>
+                            Responda cada situación.
+                        </p>
+
+
+                        <!-- Evitó el juego fuera de casa -->
+
+                        <div>
+
+                            <label for="evito_juego_fuera_casa">
+                                Evitó el juego fuera de casa
+                            </label>
+
+                            <select id="evito_juego_fuera_casa" name="evito_juego_fuera_casa">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="nunca">
+                                    Nunca
+                                </option>
+
+                                <option value="1_3_dias">
+                                    1 a 3 días
+                                </option>
+
+                                <option value="1_2_dias_semana">
+                                    1 a 2 días por semana
+                                </option>
+
+                                <option value="3_5_dias_semana">
+                                    3 a 5 días por semana
+                                </option>
+
+                                <option value="casi_todos_los_dias">
+                                    Casi todos los días
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Cambió rutas u horarios -->
+
+                        <div>
+
+                            <label for="cambio_rutas_horarios_seguridad">
+                                Cambió rutas u horarios por seguridad
+                            </label>
+
+                            <select id="cambio_rutas_horarios_seguridad" name="cambio_rutas_horarios_seguridad">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="nunca">
+                                    Nunca
+                                </option>
+
+                                <option value="1_3_dias">
+                                    1 a 3 días
+                                </option>
+
+                                <option value="1_2_dias_semana">
+                                    1 a 2 días por semana
+                                </option>
+
+                                <option value="3_5_dias_semana">
+                                    3 a 5 días por semana
+                                </option>
+
+                                <option value="casi_todos_los_dias">
+                                    Casi todos los días
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         6.3 SITUACIONES EN EL BARRIO
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            En los últimos 12 meses, ¿supo de riñas,
+                            consumo o venta de drogas, robos o violencia
+                            en el barrio?
+                        </h3>
+
+                        <p>
+                            Responda cada situación.
+                        </p>
+
+
+                        <!-- Riñas -->
+
+                        <div>
+
+                            <label for="riñas_barrio">
+                                Riñas
+                            </label>
+
+                            <select id="riñas_barrio" name="riñas_barrio">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="nunca">
+                                    Nunca
+                                </option>
+
+                                <option value="una_o_dos_veces">
+                                    Una o dos veces
+                                </option>
+
+                                <option value="varias_veces">
+                                    Varias veces
+                                </option>
+
+                                <option value="con_frecuencia">
+                                    Con frecuencia
+                                </option>
+
+                                <option value="no_sabe">
+                                    No sabe
+                                </option>
+
+                                <option value="prefiere_no_responder">
+                                    Prefiere no responder
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Consumo o venta de drogas -->
+
+                        <div>
+
+                            <label for="drogas_barrio">
+                                Consumo o venta de drogas
+                            </label>
+
+                            <select id="drogas_barrio" name="drogas_barrio">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="nunca">
+                                    Nunca
+                                </option>
+
+                                <option value="una_o_dos_veces">
+                                    Una o dos veces
+                                </option>
+
+                                <option value="varias_veces">
+                                    Varias veces
+                                </option>
+
+                                <option value="con_frecuencia">
+                                    Con frecuencia
+                                </option>
+
+                                <option value="no_sabe">
+                                    No sabe
+                                </option>
+
+                                <option value="prefiere_no_responder">
+                                    Prefiere no responder
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Robos -->
+
+                        <div>
+
+                            <label for="robos_barrio">
+                                Robos
+                            </label>
+
+                            <select id="robos_barrio" name="robos_barrio">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="nunca">
+                                    Nunca
+                                </option>
+
+                                <option value="una_o_dos_veces">
+                                    Una o dos veces
+                                </option>
+
+                                <option value="varias_veces">
+                                    Varias veces
+                                </option>
+
+                                <option value="con_frecuencia">
+                                    Con frecuencia
+                                </option>
+
+                                <option value="no_sabe">
+                                    No sabe
+                                </option>
+
+                                <option value="prefiere_no_responder">
+                                    Prefiere no responder
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Violencia -->
+
+                        <div>
+
+                            <label for="violencia_barrio">
+                                Violencia
+                            </label>
+
+                            <select id="violencia_barrio" name="violencia_barrio">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="nunca">
+                                    Nunca
+                                </option>
+
+                                <option value="una_o_dos_veces">
+                                    Una o dos veces
+                                </option>
+
+                                <option value="varias_veces">
+                                    Varias veces
+                                </option>
+
+                                <option value="con_frecuencia">
+                                    Con frecuencia
+                                </option>
+
+                                <option value="no_sabe">
+                                    No sabe
+                                </option>
+
+                                <option value="prefiere_no_responder">
+                                    Prefiere no responder
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         6.4 VÍCTIMA DE HECHO VIOLENTO
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            ¿Usted o alguien del hogar fue víctima de atraco,
+                            robo u otro hecho violento en el barrio durante
+                            los últimos 12 meses?
+                        </h3>
+
+
+                        <label>
+                            <input type="radio" name="victima_hecho_violento" value="si">
+                            Sí
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="victima_hecho_violento" value="no">
+                            No
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="victima_hecho_violento" value="no_sabe">
+                            No sabe
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="victima_hecho_violento" value="prefiere_no_responder">
+                            Prefiere no responder
+                        </label>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         6.5 APOYO DE LOS VECINOS
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            ¿Puede contar con vecinos para pedir ayuda
+                            si la necesita?
+                        </h3>
+
+
+                        <label>
+                            <input type="radio" name="apoyo_vecinos" value="mucho">
+                            Mucho
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="apoyo_vecinos" value="algo">
+                            Algo
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="apoyo_vecinos" value="poco">
+                            Poco
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="apoyo_vecinos" value="nada">
+                            Nada
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="apoyo_vecinos" value="no_sabe">
+                            No sabe
+                        </label>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         6.6 RUIDO EXTERIOR
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            En las últimas 4 semanas, ¿el ruido exterior
+                            dificultó dormir, conversar o leer y jugar en casa?
+                        </h3>
+
+                        <p>
+                            Responda cada actividad.
+                        </p>
+
+
+                        <!-- Dormir -->
+
+                        <div>
+
+                            <label for="ruido_dificulto_dormir">
+                                Dormir
+                            </label>
+
+                            <select id="ruido_dificulto_dormir" name="ruido_dificulto_dormir">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="nunca">
+                                    Nunca
+                                </option>
+
+                                <option value="1_3_dias">
+                                    1 a 3 días
+                                </option>
+
+                                <option value="1_2_dias_semana">
+                                    1 a 2 días por semana
+                                </option>
+
+                                <option value="3_5_dias_semana">
+                                    3 a 5 días por semana
+                                </option>
+
+                                <option value="casi_todos_los_dias">
+                                    Casi todos los días
+                                </option>
+
+                                <option value="no_sabe">
+                                    No sabe
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Conversar -->
+
+                        <div>
+
+                            <label for="ruido_dificulto_conversar">
+                                Conversar
+                            </label>
+
+                            <select id="ruido_dificulto_conversar" name="ruido_dificulto_conversar">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="nunca">
+                                    Nunca
+                                </option>
+
+                                <option value="1_3_dias">
+                                    1 a 3 días
+                                </option>
+
+                                <option value="1_2_dias_semana">
+                                    1 a 2 días por semana
+                                </option>
+
+                                <option value="3_5_dias_semana">
+                                    3 a 5 días por semana
+                                </option>
+
+                                <option value="casi_todos_los_dias">
+                                    Casi todos los días
+                                </option>
+
+                                <option value="no_sabe">
+                                    No sabe
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Leer y jugar -->
+
+                        <div>
+
+                            <label for="ruido_dificulto_leer_jugar">
+                                Leer y jugar
+                            </label>
+
+                            <select id="ruido_dificulto_leer_jugar" name="ruido_dificulto_leer_jugar">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="nunca">
+                                    Nunca
+                                </option>
+
+                                <option value="1_3_dias">
+                                    1 a 3 días
+                                </option>
+
+                                <option value="1_2_dias_semana">
+                                    1 a 2 días por semana
+                                </option>
+
+                                <option value="3_5_dias_semana">
+                                    3 a 5 días por semana
+                                </option>
+
+                                <option value="casi_todos_los_dias">
+                                    Casi todos los días
+                                </option>
+
+                                <option value="no_sabe">
+                                    No sabe
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         6.7 FUENTE PRINCIPAL DEL RUIDO
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            Si hubo ruido, ¿cuál fue su fuente principal?
+                        </h3>
+
+                        <label for="fuente_principal_ruido">
+                            Fuente principal
+                        </label>
+
+                        <select id="fuente_principal_ruido" name="fuente_principal_ruido">
+
+                            <option value="">
+                                Seleccione una opción
+                            </option>
+
+                            <option value="trafico">
+                                Tráfico
+                            </option>
+
+                            <option value="aviones">
+                                Aviones
+                            </option>
+
+                            <option value="construccion_industria">
+                                Construcción o industria
+                            </option>
+
+                            <option value="establecimientos">
+                                Establecimientos
+                            </option>
+
+                            <option value="vecinos_musica">
+                                Vecinos o música
+                            </option>
+
+                            <option value="animales">
+                                Animales
+                            </option>
+
+                            <option value="otra">
+                                Otra
+                            </option>
+
+                            <option value="no_sabe">
+                                No sabe
+                            </option>
+
+                            <option value="no_hubo_ruido">
+                                No hubo ruido
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         6.8 LUGAR TRANQUILO EN CASA
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            ¿Hay en casa un lugar suficientemente tranquilo
+                            para conversar, jugar o mirar libros con una
+                            persona adulta?
+                        </h3>
+
+                        <label for="lugar_tranquilo_casa">
+                            Frecuencia
+                        </label>
+
+                        <select id="lugar_tranquilo_casa" name="lugar_tranquilo_casa">
+
+                            <option value="">
+                                Seleccione una opción
+                            </option>
+
+                            <option value="nunca">
+                                Nunca
+                            </option>
+
+                            <option value="algunos_dias">
+                                Algunos días
+                            </option>
+
+                            <option value="mayoria_dias">
+                                La mayoría de los días
+                            </option>
+
+                            <option value="casi_todos_los_dias">
+                                Casi todos los días
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                </details>
+
+
+                <!-- ==========================================
+                 SESIÓN 7
+                 LENGUAJE Y ACOMPAÑAMIENTO EN CASA
+            =========================================== -->
+
+                <details>
+
+                    <summary>
+                        7. Lenguaje y acompañamiento en casa
+                    </summary>
+
+                    <!-- ==========================================
+         7.1 LENGUA O FORMA DE COMUNICACIÓN
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            ¿Qué lengua o forma de comunicación usa
+                            habitualmente el niño o la niña en casa?
+                        </h3>
+
+                        <label>
+                            <input type="radio" name="lengua_forma_comunicacion" value="espanol">
+                            Español
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="lengua_forma_comunicacion" value="espanol_otra_lengua">
+                            Español y otra lengua
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="lengua_forma_comunicacion" value="otra_lengua">
+                            Otra lengua
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="lengua_forma_comunicacion" value="lengua_senas_otro_sistema">
+                            Lengua de señas u otro sistema de comunicación
+                        </label>
+
+
+                        <label>
+                            <input type="radio" name="lengua_forma_comunicacion" value="no_sabe">
+                            No sabe
+                        </label>
+
+
+                        <div>
+
+                            <label for="lengua_forma_comunicacion_especificar">
+                                Especifique
+                            </label>
+
+                            <input type="text" id="lengua_forma_comunicacion_especificar"
+                                name="lengua_forma_comunicacion_especificar"
+                                placeholder="Especifique la lengua o forma de comunicación">
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         7.2 LIBROS INFANTILES O ILUSTRADOS
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            ¿Cuántos libros infantiles o ilustrados
+                            no escolares hay en casa?
+                        </h3>
+
+                        <label for="cantidad_libros_infantiles">
+                            Cantidad de libros
+                        </label>
+
+                        <select id="cantidad_libros_infantiles" name="cantidad_libros_infantiles">
+
+                            <option value="">
+                                Seleccione una opción
+                            </option>
+
+                            <option value="ninguno">
+                                Ninguno
+                            </option>
+
+                            <option value="1_2">
+                                1 a 2
+                            </option>
+
+                            <option value="3_5">
+                                3 a 5
+                            </option>
+
+                            <option value="6_10">
+                                6 a 10
+                            </option>
+
+                            <option value="11_20">
+                                11 a 20
+                            </option>
+
+                            <option value="mas_20">
+                                Más de 20
+                            </option>
+
+                            <option value="no_sabe">
+                                No sabe
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         7.3 ACTIVIDADES EN LOS ÚLTIMOS 7 DÍAS
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            En los últimos 7 días, ¿cuántos días una persona
+                            adulta realizó estas actividades con el niño o
+                            la niña?
+                        </h3>
+
+                        <p>
+                            Indique de 0 a 7 días para cada actividad.
+                        </p>
+
+
+                        <div>
+
+                            <label for="dias_mirar_leer_libros">
+                                Mirar o leer libros
+                            </label>
+
+                            <input type="number" id="dias_mirar_leer_libros" name="dias_mirar_leer_libros" min="0"
+                                max="7" placeholder="0 a 7 días">
+
+                        </div>
+
+
+                        <div>
+
+                            <label for="dias_contar_cuentos">
+                                Contar cuentos
+                            </label>
+
+                            <input type="number" id="dias_contar_cuentos" name="dias_contar_cuentos" min="0" max="7"
+                                placeholder="0 a 7 días">
+
+                        </div>
+
+
+                        <div>
+
+                            <label for="dias_cantar_rimas">
+                                Cantar o hacer rimas
+                            </label>
+
+                            <input type="number" id="dias_cantar_rimas" name="dias_cantar_rimas" min="0" max="7"
+                                placeholder="0 a 7 días">
+
+                        </div>
+
+
+                        <div>
+
+                            <label for="dias_jugar_palabras_sonidos">
+                                Jugar con palabras o sonidos
+                            </label>
+
+                            <input type="number" id="dias_jugar_palabras_sonidos" name="dias_jugar_palabras_sonidos"
+                                min="0" max="7" placeholder="0 a 7 días">
+
+                        </div>
+
+
+                        <div>
+
+                            <label for="dias_conversar_10_minutos">
+                                Conversar al menos 10 minutos escuchando
+                                y respondiendo
+                            </label>
+
+                            <input type="number" id="dias_conversar_10_minutos" name="dias_conversar_10_minutos" min="0"
+                                max="7" placeholder="0 a 7 días">
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         7.4 TRABAJO, CANSANCIO O ESTRÉS
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            En las últimas 4 semanas, ¿con qué frecuencia
+                            el trabajo, el cansancio o el estrés dificultaron
+                            esas actividades?
+                        </h3>
+
+                        <select id="frecuencia_dificultad_actividades" name="frecuencia_dificultad_actividades">
+
+                            <option value="">
+                                Seleccione una opción
+                            </option>
+
+                            <option value="nunca">
+                                Nunca
+                            </option>
+
+                            <option value="1_3_dias">
+                                1 a 3 días
+                            </option>
+
+                            <option value="1_2_dias_semana">
+                                1 a 2 días por semana
+                            </option>
+
+                            <option value="3_5_dias_semana">
+                                3 a 5 días por semana
+                            </option>
+
+                            <option value="casi_todos_los_dias">
+                                Casi todos los días
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         7.5 ACOMPAÑAMIENTO DEL ADULTO
+         ÚLTIMAS DOS SEMANAS
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            Acompañamiento del adulto en las últimas dos semanas
+                        </h3>
+
+                        <p>
+                            Escala para cada afirmación:
+                            Nunca / Rara vez / Algunas veces /
+                            A menudo / Casi siempre.
+                        </p>
+
+
+                        <!-- Afirmación 1 -->
+
+                        <div>
+
+                            <label for="acompanamiento_1">
+                                Un adulto acompañó al niño o la niña en una
+                                actividad de lectura, lenguaje o juego educativo.
+                            </label>
+
+                            <select id="acompanamiento_1" name="acompanamiento_1">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="nunca">
+                                    Nunca
+                                </option>
+
+                                <option value="rara_vez">
+                                    Rara vez
+                                </option>
+
+                                <option value="algunas_veces">
+                                    Algunas veces
+                                </option>
+
+                                <option value="a_menudo">
+                                    A menudo
+                                </option>
+
+                                <option value="casi_siempre">
+                                    Casi siempre
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Afirmación 2 -->
+
+                        <div>
+
+                            <label for="acompanamiento_2">
+                                Se reconoció el esfuerzo del niño o la niña
+                                aunque el resultado no fuera perfecto.
+                            </label>
+
+                            <select id="acompanamiento_2" name="acompanamiento_2">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="nunca">
+                                    Nunca
+                                </option>
+
+                                <option value="rara_vez">
+                                    Rara vez
+                                </option>
+
+                                <option value="algunas_veces">
+                                    Algunas veces
+                                </option>
+
+                                <option value="a_menudo">
+                                    A menudo
+                                </option>
+
+                                <option value="casi_siempre">
+                                    Casi siempre
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Afirmación 3 -->
+
+                        <div>
+
+                            <label for="acompanamiento_3">
+                                Se adaptó la explicación cuando el niño o la niña
+                                no comprendió.
+                            </label>
+
+                            <select id="acompanamiento_3" name="acompanamiento_3">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="nunca">
+                                    Nunca
+                                </option>
+
+                                <option value="rara_vez">
+                                    Rara vez
+                                </option>
+
+                                <option value="algunas_veces">
+                                    Algunas veces
+                                </option>
+
+                                <option value="a_menudo">
+                                    A menudo
+                                </option>
+
+                                <option value="casi_siempre">
+                                    Casi siempre
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Afirmación 4 -->
+
+                        <div>
+
+                            <label for="acompanamiento_4">
+                                Se permitió que el niño o la niña descansara
+                                cuando mostraba fatiga o frustración.
+                            </label>
+
+                            <select id="acompanamiento_4" name="acompanamiento_4">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="nunca">
+                                    Nunca
+                                </option>
+
+                                <option value="rara_vez">
+                                    Rara vez
+                                </option>
+
+                                <option value="algunas_veces">
+                                    Algunas veces
+                                </option>
+
+                                <option value="a_menudo">
+                                    A menudo
+                                </option>
+
+                                <option value="casi_siempre">
+                                    Casi siempre
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Afirmación 5 -->
+
+                        <div>
+
+                            <label for="acompanamiento_5">
+                                Se insistió hasta terminar aunque el niño o la
+                                niña estuviera claramente saturado.
+                            </label>
+
+                            <select id="acompanamiento_5" name="acompanamiento_5">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="nunca">
+                                    Nunca
+                                </option>
+
+                                <option value="rara_vez">
+                                    Rara vez
+                                </option>
+
+                                <option value="algunas_veces">
+                                    Algunas veces
+                                </option>
+
+                                <option value="a_menudo">
+                                    A menudo
+                                </option>
+
+                                <option value="casi_siempre">
+                                    Casi siempre
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Afirmación 6 -->
+
+                        <div>
+
+                            <label for="acompanamiento_6">
+                                Se utilizó la amenaza de castigo para conseguir
+                                que practicara.
+                            </label>
+
+                            <select id="acompanamiento_6" name="acompanamiento_6">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="nunca">
+                                    Nunca
+                                </option>
+
+                                <option value="rara_vez">
+                                    Rara vez
+                                </option>
+
+                                <option value="algunas_veces">
+                                    Algunas veces
+                                </option>
+
+                                <option value="a_menudo">
+                                    A menudo
+                                </option>
+
+                                <option value="casi_siempre">
+                                    Casi siempre
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Afirmación 7 -->
+
+                        <div>
+
+                            <label for="acompanamiento_7">
+                                Se comentó con el terapeuta alguna dificultad
+                                observada en casa.
+                            </label>
+
+                            <select id="acompanamiento_7" name="acompanamiento_7">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="nunca">
+                                    Nunca
+                                </option>
+
+                                <option value="rara_vez">
+                                    Rara vez
+                                </option>
+
+                                <option value="algunas_veces">
+                                    Algunas veces
+                                </option>
+
+                                <option value="a_menudo">
+                                    A menudo
+                                </option>
+
+                                <option value="casi_siempre">
+                                    Casi siempre
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Afirmación 8 -->
+
+                        <div>
+
+                            <label for="acompanamiento_8">
+                                Se aplicó en casa alguna recomendación acordada
+                                con CMC.
+                            </label>
+
+                            <select id="acompanamiento_8" name="acompanamiento_8">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="nunca">
+                                    Nunca
+                                </option>
+
+                                <option value="rara_vez">
+                                    Rara vez
+                                </option>
+
+                                <option value="algunas_veces">
+                                    Algunas veces
+                                </option>
+
+                                <option value="a_menudo">
+                                    A menudo
+                                </option>
+
+                                <option value="casi_siempre">
+                                    Casi siempre
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         7.6 DINÁMICA FAMILIAR FRENTE AL APRENDIZAJE
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            Dinámica familiar frente al aprendizaje
+                        </h3>
+
+                        <p>
+                            Escala para cada afirmación:
+                            Totalmente en desacuerdo / En desacuerdo /
+                            Ni de acuerdo ni en desacuerdo / De acuerdo /
+                            Totalmente de acuerdo.
+                        </p>
+
+
+                        <!-- Afirmación 1 -->
+
+                        <div>
+
+                            <label for="dinamica_familiar_1">
+                                En casa solemos escuchar al niño o la niña
+                                cuando intenta explicar algo.
+                            </label>
+
+                            <select id="dinamica_familiar_1" name="dinamica_familiar_1">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="totalmente_desacuerdo">
+                                    Totalmente en desacuerdo
+                                </option>
+
+                                <option value="en_desacuerdo">
+                                    En desacuerdo
+                                </option>
+
+                                <option value="ni_acuerdo_ni_desacuerdo">
+                                    Ni de acuerdo ni en desacuerdo
+                                </option>
+
+                                <option value="de_acuerdo">
+                                    De acuerdo
+                                </option>
+
+                                <option value="totalmente_acuerdo">
+                                    Totalmente de acuerdo
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Afirmación 2 -->
+
+                        <div>
+
+                            <label for="dinamica_familiar_2">
+                                El niño o la niña recibe ayuda sin que todo
+                                se convierta en una corrección.
+                            </label>
+
+                            <select id="dinamica_familiar_2" name="dinamica_familiar_2">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="totalmente_desacuerdo">
+                                    Totalmente en desacuerdo
+                                </option>
+
+                                <option value="en_desacuerdo">
+                                    En desacuerdo
+                                </option>
+
+                                <option value="ni_acuerdo_ni_desacuerdo">
+                                    Ni de acuerdo ni en desacuerdo
+                                </option>
+
+                                <option value="de_acuerdo">
+                                    De acuerdo
+                                </option>
+
+                                <option value="totalmente_acuerdo">
+                                    Totalmente de acuerdo
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Afirmación 3 -->
+
+                        <div>
+
+                            <label for="dinamica_familiar_3">
+                                Compartimos momentos agradables que no dependen
+                                del rendimiento escolar.
+                            </label>
+
+                            <select id="dinamica_familiar_3" name="dinamica_familiar_3">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="totalmente_desacuerdo">
+                                    Totalmente en desacuerdo
+                                </option>
+
+                                <option value="en_desacuerdo">
+                                    En desacuerdo
+                                </option>
+
+                                <option value="ni_acuerdo_ni_desacuerdo">
+                                    Ni de acuerdo ni en desacuerdo
+                                </option>
+
+                                <option value="de_acuerdo">
+                                    De acuerdo
+                                </option>
+
+                                <option value="totalmente_acuerdo">
+                                    Totalmente de acuerdo
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Afirmación 4 -->
+
+                        <div>
+
+                            <label for="dinamica_familiar_4">
+                                Cuando el niño o la niña se equivoca, intentamos
+                                comprender qué le ha resultado difícil.
+                            </label>
+
+                            <select id="dinamica_familiar_4" name="dinamica_familiar_4">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="totalmente_desacuerdo">
+                                    Totalmente en desacuerdo
+                                </option>
+
+                                <option value="en_desacuerdo">
+                                    En desacuerdo
+                                </option>
+
+                                <option value="ni_acuerdo_ni_desacuerdo">
+                                    Ni de acuerdo ni en desacuerdo
+                                </option>
+
+                                <option value="de_acuerdo">
+                                    De acuerdo
+                                </option>
+
+                                <option value="totalmente_acuerdo">
+                                    Totalmente de acuerdo
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Afirmación 5 -->
+
+                        <div>
+
+                            <label for="dinamica_familiar_5">
+                                Las normas del hogar son previsibles y se explican
+                                con claridad.
+                            </label>
+
+                            <select id="dinamica_familiar_5" name="dinamica_familiar_5">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="totalmente_desacuerdo">
+                                    Totalmente en desacuerdo
+                                </option>
+
+                                <option value="en_desacuerdo">
+                                    En desacuerdo
+                                </option>
+
+                                <option value="ni_acuerdo_ni_desacuerdo">
+                                    Ni de acuerdo ni en desacuerdo
+                                </option>
+
+                                <option value="de_acuerdo">
+                                    De acuerdo
+                                </option>
+
+                                <option value="totalmente_acuerdo">
+                                    Totalmente de acuerdo
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Afirmación 6 -->
+
+                        <div>
+
+                            <label for="dinamica_familiar_6">
+                                Las dificultades del niño o la niña suelen terminar
+                                en reproches o comparaciones.
+                            </label>
+
+                            <select id="dinamica_familiar_6" name="dinamica_familiar_6">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="totalmente_desacuerdo">
+                                    Totalmente en desacuerdo
+                                </option>
+
+                                <option value="en_desacuerdo">
+                                    En desacuerdo
+                                </option>
+
+                                <option value="ni_acuerdo_ni_desacuerdo">
+                                    Ni de acuerdo ni en desacuerdo
+                                </option>
+
+                                <option value="de_acuerdo">
+                                    De acuerdo
+                                </option>
+
+                                <option value="totalmente_acuerdo">
+                                    Totalmente de acuerdo
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Afirmación 7 -->
+
+                        <div>
+
+                            <label for="dinamica_familiar_7">
+                                En casa se evita hablar de los problemas
+                                de aprendizaje.
+                            </label>
+
+                            <select id="dinamica_familiar_7" name="dinamica_familiar_7">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="totalmente_desacuerdo">
+                                    Totalmente en desacuerdo
+                                </option>
+
+                                <option value="en_desacuerdo">
+                                    En desacuerdo
+                                </option>
+
+                                <option value="ni_acuerdo_ni_desacuerdo">
+                                    Ni de acuerdo ni en desacuerdo
+                                </option>
+
+                                <option value="de_acuerdo">
+                                    De acuerdo
+                                </option>
+
+                                <option value="totalmente_acuerdo">
+                                    Totalmente de acuerdo
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Afirmación 8 -->
+
+                        <div>
+
+                            <label for="dinamica_familiar_8">
+                                El niño o la niña puede pedir ayuda sin miedo
+                                a decepcionar a los adultos.
+                            </label>
+
+                            <select id="dinamica_familiar_8" name="dinamica_familiar_8">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="totalmente_desacuerdo">
+                                    Totalmente en desacuerdo
+                                </option>
+
+                                <option value="ni_acuerdo_ni_desacuerdo">
+                                    Ni de acuerdo ni en desacuerdo
+                                </option>
+
+                                <option value="en_desacuerdo">
+                                    En desacuerdo
+                                </option>
+
+                                <option value="de_acuerdo">
+                                    De acuerdo
+                                </option>
+
+                                <option value="totalmente_acuerdo">
+                                    Totalmente de acuerdo
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                </details>
+
+
+                <!-- ==========================================
+                 SESIÓN 8
+                 ALIMENTACIÓN, ACTIVIDAD, PANTALLAS Y SUEÑO
+            =========================================== -->
+
+                <details>
+
+                    <summary>
+                        8. Alimentación, actividad, pantallas y sueño
+                    </summary>
+
+                    <!-- ==========================================
+         8.1 FRECUENCIA DE CONSUMO DE ALIMENTOS
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            Durante el último mes, ¿con qué frecuencia
+                            consumió cada grupo de alimentos?
+                        </h3>
+
+                        <p>
+                            Seleccione una opción para cada grupo de alimentos.
+                        </p>
+
+
+                        <!-- Escala de frecuencia alimentaria -->
+
+                        <!-- Fruta -->
+
+                        <div>
+
+                            <label for="consumo_fruta">
+                                Fruta
+                            </label>
+
+                            <select id="consumo_fruta" name="consumo_fruta">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="menos_una_vez_mes">
+                                    Menos de una vez al mes
+                                </option>
+
+                                <option value="1_3_al_mes">
+                                    1 a 3 al mes
+                                </option>
+
+                                <option value="1_2_por_semana">
+                                    1 a 2 por semana
+                                </option>
+
+                                <option value="3_4_por_semana">
+                                    3 a 4 por semana
+                                </option>
+
+                                <option value="5_6_por_semana">
+                                    5 a 6 por semana
+                                </option>
+
+                                <option value="una_vez_dia">
+                                    Una vez al día
+                                </option>
+
+                                <option value="dos_o_mas_al_dia">
+                                    Dos o más al día
+                                </option>
+
+                                <option value="no_sabe">
+                                    No sabe
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Verduras -->
+
+                        <div>
+
+                            <label for="consumo_verduras">
+                                Verduras
+                            </label>
+
+                            <select id="consumo_verduras" name="consumo_verduras">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="menos_una_vez_mes">
+                                    Menos de una vez al mes
+                                </option>
+
+                                <option value="1_3_al_mes">
+                                    1 a 3 al mes
+                                </option>
+
+                                <option value="1_2_por_semana">
+                                    1 a 2 por semana
+                                </option>
+
+                                <option value="3_4_por_semana">
+                                    3 a 4 por semana
+                                </option>
+
+                                <option value="5_6_por_semana">
+                                    5 a 6 por semana
+                                </option>
+
+                                <option value="una_vez_dia">
+                                    Una vez al día
+                                </option>
+
+                                <option value="dos_o_mas_al_dia">
+                                    Dos o más al día
+                                </option>
+
+                                <option value="no_sabe">
+                                    No sabe
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Legumbres -->
+
+                        <div>
+
+                            <label for="consumo_legumbres">
+                                Legumbres
+                            </label>
+
+                            <select id="consumo_legumbres" name="consumo_legumbres">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="menos_una_vez_mes">
+                                    Menos de una vez al mes
+                                </option>
+
+                                <option value="1_3_al_mes">
+                                    1 a 3 al mes
+                                </option>
+
+                                <option value="1_2_por_semana">
+                                    1 a 2 por semana
+                                </option>
+
+                                <option value="3_4_por_semana">
+                                    3 a 4 por semana
+                                </option>
+
+                                <option value="5_6_por_semana">
+                                    5 a 6 por semana
+                                </option>
+
+                                <option value="una_vez_dia">
+                                    Una vez al día
+                                </option>
+
+                                <option value="dos_o_mas_al_dia">
+                                    Dos o más al día
+                                </option>
+
+                                <option value="no_sabe">
+                                    No sabe
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Huevos -->
+
+                        <div>
+
+                            <label for="consumo_huevos">
+                                Huevos
+                            </label>
+
+                            <select id="consumo_huevos" name="consumo_huevos">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="menos_una_vez_mes">
+                                    Menos de una vez al mes
+                                </option>
+
+                                <option value="1_3_al_mes">
+                                    1 a 3 al mes
+                                </option>
+
+                                <option value="1_2_por_semana">
+                                    1 a 2 por semana
+                                </option>
+
+                                <option value="3_4_por_semana">
+                                    3 a 4 por semana
+                                </option>
+
+                                <option value="5_6_por_semana">
+                                    5 a 6 por semana
+                                </option>
+
+                                <option value="una_vez_dia">
+                                    Una vez al día
+                                </option>
+
+                                <option value="dos_o_mas_al_dia">
+                                    Dos o más al día
+                                </option>
+
+                                <option value="no_sabe">
+                                    No sabe
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Pescado -->
+
+                        <div>
+
+                            <label for="consumo_pescado">
+                                Pescado
+                            </label>
+
+                            <select id="consumo_pescado" name="consumo_pescado">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="menos_una_vez_mes">
+                                    Menos de una vez al mes
+                                </option>
+
+                                <option value="1_3_al_mes">
+                                    1 a 3 al mes
+                                </option>
+
+                                <option value="1_2_por_semana">
+                                    1 a 2 por semana
+                                </option>
+
+                                <option value="3_4_por_semana">
+                                    3 a 4 por semana
+                                </option>
+
+                                <option value="5_6_por_semana">
+                                    5 a 6 por semana
+                                </option>
+
+                                <option value="una_vez_dia">
+                                    Una vez al día
+                                </option>
+
+                                <option value="dos_o_mas_al_dia">
+                                    Dos o más al día
+                                </option>
+
+                                <option value="no_sabe">
+                                    No sabe
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Carne o pollo -->
+
+                        <div>
+
+                            <label for="consumo_carne_pollo">
+                                Carne o pollo
+                            </label>
+
+                            <select id="consumo_carne_pollo" name="consumo_carne_pollo">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="menos_una_vez_mes">
+                                    Menos de una vez al mes
+                                </option>
+
+                                <option value="1_3_al_mes">
+                                    1 a 3 al mes
+                                </option>
+
+                                <option value="1_2_por_semana">
+                                    1 a 2 por semana
+                                </option>
+
+                                <option value="3_4_por_semana">
+                                    3 a 4 por semana
+                                </option>
+
+                                <option value="5_6_por_semana">
+                                    5 a 6 por semana
+                                </option>
+
+                                <option value="una_vez_dia">
+                                    Una vez al día
+                                </option>
+
+                                <option value="dos_o_mas_al_dia">
+                                    Dos o más al día
+                                </option>
+
+                                <option value="no_sabe">
+                                    No sabe
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Lácteos o alternativas -->
+
+                        <div>
+
+                            <label for="consumo_lacteos_alternativas">
+                                Lácteos o alternativas
+                            </label>
+
+                            <select id="consumo_lacteos_alternativas" name="consumo_lacteos_alternativas">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="menos_una_vez_mes">
+                                    Menos de una vez al mes
+                                </option>
+
+                                <option value="1_3_al_mes">
+                                    1 a 3 al mes
+                                </option>
+
+                                <option value="1_2_por_semana">
+                                    1 a 2 por semana
+                                </option>
+
+                                <option value="3_4_por_semana">
+                                    3 a 4 por semana
+                                </option>
+
+                                <option value="5_6_por_semana">
+                                    5 a 6 por semana
+                                </option>
+
+                                <option value="una_vez_dia">
+                                    Una vez al día
+                                </option>
+
+                                <option value="dos_o_mas_al_dia">
+                                    Dos o más al día
+                                </option>
+
+                                <option value="no_sabe">
+                                    No sabe
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Frutos secos o semillas -->
+
+                        <div>
+
+                            <label for="consumo_frutos_secos_semillas">
+                                Frutos secos o semillas cuando correspondan por edad
+                            </label>
+
+                            <select id="consumo_frutos_secos_semillas" name="consumo_frutos_secos_semillas">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="menos_una_vez_mes">
+                                    Menos de una vez al mes
+                                </option>
+
+                                <option value="1_3_al_mes">
+                                    1 a 3 al mes
+                                </option>
+
+                                <option value="1_2_por_semana">
+                                    1 a 2 por semana
+                                </option>
+
+                                <option value="3_4_por_semana">
+                                    3 a 4 por semana
+                                </option>
+
+                                <option value="5_6_por_semana">
+                                    5 a 6 por semana
+                                </option>
+
+                                <option value="una_vez_dia">
+                                    Una vez al día
+                                </option>
+
+                                <option value="dos_o_mas_al_dia">
+                                    Dos o más al día
+                                </option>
+
+                                <option value="no_sabe">
+                                    No sabe
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Bebidas azucaradas -->
+
+                        <div>
+
+                            <label for="consumo_bebidas_azucaradas">
+                                Bebidas azucaradas
+                            </label>
+
+                            <select id="consumo_bebidas_azucaradas" name="consumo_bebidas_azucaradas">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="menos_una_vez_mes">
+                                    Menos de una vez al mes
+                                </option>
+
+                                <option value="1_3_al_mes">
+                                    1 a 3 al mes
+                                </option>
+
+                                <option value="1_2_por_semana">
+                                    1 a 2 por semana
+                                </option>
+
+                                <option value="3_4_por_semana">
+                                    3 a 4 por semana
+                                </option>
+
+                                <option value="5_6_por_semana">
+                                    5 a 6 por semana
+                                </option>
+
+                                <option value="una_vez_dia">
+                                    Una vez al día
+                                </option>
+
+                                <option value="dos_o_mas_al_dia">
+                                    Dos o más al día
+                                </option>
+
+                                <option value="no_sabe">
+                                    No sabe
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Dulces o paquetes -->
+
+                        <div>
+
+                            <label for="consumo_dulces_paquetes">
+                                Dulces o paquetes
+                            </label>
+
+                            <select id="consumo_dulces_paquetes" name="consumo_dulces_paquetes">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="menos_una_vez_mes">
+                                    Menos de una vez al mes
+                                </option>
+
+                                <option value="1_3_al_mes">
+                                    1 a 3 al mes
+                                </option>
+
+                                <option value="1_2_por_semana">
+                                    1 a 2 por semana
+                                </option>
+
+                                <option value="3_4_por_semana">
+                                    3 a 4 por semana
+                                </option>
+
+                                <option value="5_6_por_semana">
+                                    5 a 6 por semana
+                                </option>
+
+                                <option value="una_vez_dia">
+                                    Una vez al día
+                                </option>
+
+                                <option value="dos_o_mas_al_dia">
+                                    Dos o más al día
+                                </option>
+
+                                <option value="no_sabe">
+                                    No sabe
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Comida rápida -->
+
+                        <div>
+
+                            <label for="consumo_comida_rapida">
+                                Comida rápida
+                            </label>
+
+                            <select id="consumo_comida_rapida" name="consumo_comida_rapida">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="menos_una_vez_mes">
+                                    Menos de una vez al mes
+                                </option>
+
+                                <option value="1_3_al_mes">
+                                    1 a 3 al mes
+                                </option>
+
+                                <option value="1_2_por_semana">
+                                    1 a 2 por semana
+                                </option>
+
+                                <option value="3_4_por_semana">
+                                    3 a 4 por semana
+                                </option>
+
+                                <option value="5_6_por_semana">
+                                    5 a 6 por semana
+                                </option>
+
+                                <option value="una_vez_dia">
+                                    Una vez al día
+                                </option>
+
+                                <option value="dos_o_mas_al_dia">
+                                    Dos o más al día
+                                </option>
+
+                                <option value="no_sabe">
+                                    No sabe
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Embutidos -->
+
+                        <div>
+
+                            <label for="consumo_embutidos">
+                                Embutidos
+                            </label>
+
+                            <select id="consumo_embutidos" name="consumo_embutidos">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="menos_una_vez_mes">
+                                    Menos de una vez al mes
+                                </option>
+
+                                <option value="1_3_al_mes">
+                                    1 a 3 al mes
+                                </option>
+
+                                <option value="1_2_por_semana">
+                                    1 a 2 por semana
+                                </option>
+
+                                <option value="3_4_por_semana">
+                                    3 a 4 por semana
+                                </option>
+
+                                <option value="5_6_por_semana">
+                                    5 a 6 por semana
+                                </option>
+
+                                <option value="una_vez_dia">
+                                    Una vez al día
+                                </option>
+
+                                <option value="dos_o_mas_al_dia">
+                                    Dos o más al día
+                                </option>
+
+                                <option value="no_sabe">
+                                    No sabe
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         8.2 DESAYUNO
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            ¿Cuántos días por semana desayuna antes de sus actividades?
+                        </h3>
+
+                        <input type="number" id="dias_desayuno" name="dias_desayuno" min="0" max="7"
+                            placeholder="0 a 7">
+
+                        <span>
+                            de 0 a 7 días
+                        </span>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         8.3 VARIEDAD DE ALIMENTOS
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            ¿La variedad de alimentos que acepta es limitada?
+                        </h3>
+
+                        <select id="variedad_alimentos_limitada" name="variedad_alimentos_limitada">
+
+                            <option value="">
+                                Seleccione una opción
+                            </option>
+
+                            <option value="no">
+                                No
+                            </option>
+
+                            <option value="un_poco">
+                                Un poco
+                            </option>
+
+                            <option value="moderadamente">
+                                Moderadamente
+                            </option>
+
+                            <option value="mucho">
+                                Mucho
+                            </option>
+
+                            <option value="no_sabe">
+                                No sabe
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         8.4 ACTIVIDAD FÍSICA Y JUEGO AL AIRE LIBRE
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            En los últimos 7 días, ¿cuántos días realizó
+                            actividad física?
+                        </h3>
+
+                        <input type="number" id="dias_actividad_fisica" name="dias_actividad_fisica" min="0" max="7"
+                            placeholder="0 a 7">
+
+
+                        <h3>
+                            ¿Cuántos días jugó al aire libre?
+                        </h3>
+
+                        <input type="number" id="dias_juego_aire_libre" name="dias_juego_aire_libre" min="0" max="7"
+                            placeholder="0 a 7">
+
+                        <p>
+                            Si por edad o condición alguna actividad no corresponde,
+                            marque No aplica.
+                        </p>
+
+                        <label>
+                            <input type="checkbox" id="actividad_no_aplica" name="actividad_no_aplica"
+                                value="no_aplica">
+                            No aplica
+                        </label>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         8.5 TIEMPO DE PANTALLAS
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            En un día habitual, ¿cuánto tiempo usa pantallas
+                            por entretenimiento?
+                        </h3>
+
+
+                        <div>
+
+                            <label for="pantallas_entre_semana">
+                                Entre semana
+                            </label>
+
+                            <input type="number" id="pantallas_entre_semana" name="pantallas_entre_semana" min="0"
+                                step="0.5" placeholder="Horas">
+
+                            <span>
+                                horas
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <label for="pantallas_fin_semana">
+                                Fines de semana
+                            </label>
+
+                            <input type="number" id="pantallas_fin_semana" name="pantallas_fin_semana" min="0"
+                                step="0.5" placeholder="Horas">
+
+                            <span>
+                                horas
+                            </span>
+
+                        </div>
+
+
+                        <label>
+                            <input type="checkbox" id="pantallas_no_sabe" name="pantallas_no_sabe" value="no_sabe">
+                            No sabe
+                        </label>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         8.6 SUEÑO
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            En los últimos 7 días, ¿cuántas horas durmió
+                            aproximadamente por noche?
+                        </h3>
+
+                        <input type="number" id="horas_sueno_noche" name="horas_sueno_noche" min="0" step="0.5"
+                            placeholder="Horas">
+
+
+                        <div>
+
+                            <label for="minutos_dormirse">
+                                ¿Cuánto tardó en dormirse?
+                            </label>
+
+                            <input type="number" id="minutos_dormirse" name="minutos_dormirse" min="0"
+                                placeholder="Minutos">
+
+                            <span>
+                                minutos
+                            </span>
+
+                        </div>
+
+
+                        <div>
+
+                            <label for="despertares_habituales">
+                                ¿Cuántas veces despertó habitualmente?
+                            </label>
+
+                            <input type="number" id="despertares_habituales" name="despertares_habituales" min="0"
+                                placeholder="Cantidad de veces">
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         8.7 HORARIOS DE SUEÑO
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            ¿Mantiene horarios parecidos para acostarse
+                            y levantarse?
+                        </h3>
+
+                        <select id="horarios_sueno_parecidos" name="horarios_sueno_parecidos">
+
+                            <option value="">
+                                Seleccione una opción
+                            </option>
+
+                            <option value="casi_todos_los_dias">
+                                Casi todos los días
+                            </option>
+
+                            <option value="mayoria_dias">
+                                La mayoría de los días
+                            </option>
+
+                            <option value="pocos_dias">
+                                Pocos días
+                            </option>
+
+                            <option value="nunca">
+                                Nunca
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         8.8 MEDICAMENTOS O SUPLEMENTOS PARA DORMIR
+    =========================================== -->
+
+                    <div>
+
+                        <h3>
+                            ¿Usa medicamentos o suplementos para dormir?
+                        </h3>
+
+                        <select id="medicamentos_suplementos_dormir" name="medicamentos_suplementos_dormir">
+
+                            <option value="">
+                                Seleccione una opción
+                            </option>
+
+                            <option value="no">
+                                No
+                            </option>
+
+                            <option value="ocasionalmente">
+                                Ocasionalmente
+                            </option>
+
+                            <option value="varias_veces_semana">
+                                Varias veces por semana
+                            </option>
+
+                            <option value="casi_todos_los_dias">
+                                Casi todos los días
+                            </option>
+
+                            <option value="no_sabe">
+                                No sabe
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                </details>
+
+
+                <!-- ==========================================
+                 SESIÓN 9
+                 CAMBIOS Y NECESIDADES DE APOYO
+            =========================================== -->
+
+                <details>
+
+                    <summary>
+                        9. Cambios y necesidades de apoyo
+                    </summary>
+
+                    <!-- 9.1 CAMBIOS RECIENTES -->
+                    <div>
+                        <h3>
+                            Cambios recientes
+                        </h3>
+
+                        <p>
+                            ¿Ha ocurrido recientemente algún cambio familiar, escolar o de salud
+                            que pueda afectar al niño o la niña?
+                        </p>
+
+                        <label>
+                            <input type="radio" name="cambio_reciente" value="si">
+                            Sí
+                        </label>
+
+                        <label>
+                            <input type="radio" name="cambio_reciente" value="no">
+                            No
+                        </label>
+
+                        <label>
+                            <input type="radio" name="cambio_reciente" value="no_sabe">
+                            No sabe
+                        </label>
+
+                        <div>
+                            <label for="descripcion_cambio_reciente">
+                                Si respondió sí, ¿cuál?
+                            </label>
+
+                            <textarea id="descripcion_cambio_reciente" name="descripcion_cambio_reciente" rows="3"
+                                placeholder="Describa brevemente el cambio"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- 9.2 ACTIVIDAD ACORDADA -->
+                    <div>
+                        <h3>
+                            Actividad acordada desde la última visita
+                        </h3>
+
+                        <p>
+                            ¿Qué actividad acordada pudo realizar la familia desde la última
+                            visita y qué dificultad encontró?
+                        </p>
+
+                        <div>
+                            <label for="actividad_acordada_familia">
+                                Respuesta breve
+                            </label>
+
+                            <textarea id="actividad_acordada_familia" name="actividad_acordada_familia" rows="3"
+                                placeholder="Describa la actividad realizada y la dificultad encontrada"></textarea>
+                        </div>
+
+                        <label>
+                            <input type="checkbox" id="actividad_no_aplica_ingreso" name="actividad_no_aplica_ingreso"
+                                value="no_aplica">
+                            No aplica en ingreso
+                        </label>
+                    </div>
+
+                    <!-- 9.3 APOYO MÁS ÚTIL -->
+                    <div>
+                        <h3>
+                            Necesidades de apoyo
+                        </h3>
+
+                        <p>
+                            ¿Qué apoyo le sería más útil ahora? Puede marcar varios.
+                        </p>
+
+                        <label>
+                            <input type="checkbox" name="apoyos_necesarios[]" value="orientacion_practicar_casa">
+                            Orientación para practicar en casa
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="apoyos_necesarios[]" value="ajustes_escolares">
+                            Ajustes escolares
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="apoyos_necesarios[]" value="acceso_sesiones">
+                            Acceso a sesiones
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="apoyos_necesarios[]" value="apoyo_social">
+                            Apoyo social
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="apoyos_necesarios[]" value="apoyo_emocional_cuidador">
+                            Apoyo emocional de la persona cuidadora
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="apoyos_necesarios[]" value="otro">
+                            Otro
+                        </label>
+
+                        <div>
+                            <label for="otro_apoyo_necesario">
+                                Si seleccionó "Otro", ¿cuál?
+                            </label>
+
+                            <input type="text" id="otro_apoyo_necesario" name="otro_apoyo_necesario"
+                                placeholder="Especifique el apoyo">
+                        </div>
+                    </div>
+
+
+                </details>
+
+
+                <!-- ==========================================
+                 SESIÓN 10
+                 OBSERVACIONES Y RESULTADO DEL TAMIZAJE
+            =========================================== -->
+
+                <details>
+
+                    <summary>
+                        10. Observaciones y resultado del tamizaje
+                    </summary>
+
+                    <!-- 10.1 COMPRENSIÓN DE LAS PREGUNTAS -->
+                    <div>
+                        <h3>
+                            Observaciones durante la aplicación
+                        </h3>
+
+                        <p>
+                            Completa el equipo CMC.
+                        </p>
+
+                        <p>
+                            Durante la entrevista, ¿cómo fue la comprensión de las preguntas
+                            por parte de la persona cuidadora?
+                        </p>
+
+                        <label>
+                            <input type="radio" name="comprension_preguntas" value="sin_aclaraciones">
+                            Comprendió las preguntas sin necesidad de aclaraciones
+                        </label>
+
+                        <label>
+                            <input type="radio" name="comprension_preguntas" value="aclaracion_ocasional">
+                            Requirió aclaración o reformulación ocasional de algunas preguntas
+                        </label>
+
+                        <label>
+                            <input type="radio" name="comprension_preguntas" value="reformulacion_frecuente">
+                            Requirió repetir o reformular frecuentemente las preguntas
+                            para poder responder
+                        </label>
+
+                        <label>
+                            <input type="radio" name="comprension_preguntas" value="dificultades_importantes">
+                            Se observaron dificultades importantes para comprender las
+                            preguntas, aun después de explicarlas o reformularlas
+                        </label>
+
+                        <label>
+                            <input type="radio" name="comprension_preguntas" value="no_fue_posible_valorar">
+                            No fue posible valorar adecuadamente la comprensión
+                        </label>
+
+                        <div>
+                            <label for="observaciones_aplicacion">
+                                Observaciones, si se requieren
+                            </label>
+
+                            <textarea id="observaciones_aplicacion" name="observaciones_aplicacion" rows="4"
+                                placeholder="Ingrese las observaciones que considere necesarias"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- 10.2 RESULTADO DEL TAMIZAJE -->
+                    <div>
+                        <h3>
+                            Resultado del tamizaje psicosocial – Trabajo Social
+                        </h3>
+
+                        <!-- FACTORES PROTECTORES -->
+                        <div>
+                            <label for="factores_protectores">
+                                Factores protectores identificados
+                            </label>
+
+                            <textarea id="factores_protectores" name="factores_protectores" rows="4"
+                                placeholder="Describa los factores protectores identificados"></textarea>
+                        </div>
+
+                        <!-- FACTORES DE RIESGO -->
+                        <div>
+                            <label for="factores_riesgo_vulnerabilidad">
+                                Factores de riesgo o vulnerabilidad identificados
+                            </label>
+
+                            <textarea id="factores_riesgo_vulnerabilidad" name="factores_riesgo_vulnerabilidad" rows="4"
+                                placeholder="Describa los factores de riesgo o vulnerabilidad identificados"></textarea>
+                        </div>
+
+                        <!-- HALLAZGOS -->
+                        <div>
+                            <label for="hallazgos_ampliacion_valoracion">
+                                Hallazgos que requieren ampliación o valoración específica
+                            </label>
+
+                            <textarea id="hallazgos_ampliacion_valoracion" name="hallazgos_ampliacion_valoracion"
+                                rows="4"
+                                placeholder="Describa los hallazgos que requieren ampliación o valoración"></textarea>
+                        </div>
+
+                        <!-- CONDUCTA -->
+                        <div>
+                            <h3>
+                                Conducta
+                            </h3>
+
+                            <p>
+                                Seleccione una opción.
+                            </p>
+
+                            <label>
+                                <input type="radio" name="conducta_trabajo_social" value="orientacion_familia">
+                                Orientación a familia
+                            </label>
+
+                            <label>
+                                <input type="radio" name="conducta_trabajo_social" value="seguimiento_trabajo_social">
+                                Seguimiento por Trabajo Social
+                            </label>
+
+                            <label>
+                                <input type="radio" name="conducta_trabajo_social"
+                                    value="articulacion_equipo_interdisciplinario">
+                                Articulación con equipo interdisciplinario
+                            </label>
+
+                            <label>
+                                <input type="radio" name="conducta_trabajo_social"
+                                    value="remision_gestion_interinstitucional">
+                                Remisión o gestión interinstitucional
+                            </label>
+
+                            <label>
+                                <input type="radio" name="conducta_trabajo_social"
+                                    value="activacion_ruta_institucional">
+                                Activación de ruta institucional
+                            </label>
+
+                            <label>
+                                <input type="radio" name="conducta_trabajo_social" value="otra">
+                                Otra
+                            </label>
+
+                            <div>
+                                <label for="otra_conducta">
+                                    Si seleccionó "Otra", ¿cuál?
+                                </label>
+
+                                <input type="text" id="otra_conducta" name="otra_conducta"
+                                    placeholder="Especifique la conducta">
+                            </div>
+                        </div>
+
+                        <!-- PRIORIDAD -->
+                        <div>
+                            <h3>
+                                Prioridad de seguimiento
+                            </h3>
+
+                            <label>
+                                <input type="radio" name="prioridad_seguimiento" value="sin_prioridad_inmediata">
+                                Sin prioridad inmediata
+                            </label>
+
+                            <label>
+                                <input type="radio" name="prioridad_seguimiento" value="seguimiento_programado">
+                                Seguimiento programado
+                            </label>
+
+                            <label>
+                                <input type="radio" name="prioridad_seguimiento" value="prioritario">
+                                Prioritario
+                            </label>
+
+                            <label>
+                                <input type="radio" name="prioridad_seguimiento" value="inmediato_ruta_institucional">
+                                Inmediato según ruta institucional
+                            </label>
+                        </div>
+
+                        <!-- PLAN DE INTERVENCIÓN -->
+                        <div>
+                            <label for="plan_intervencion_seguimiento">
+                                Plan de intervención o seguimiento
+                            </label>
+
+                            <textarea id="plan_intervencion_seguimiento" name="plan_intervencion_seguimiento" rows="5"
+                                placeholder="Describa el plan de intervención o seguimiento"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- 10.3 PROFESIONAL RESPONSABLE -->
+                    <div>
+                        <h3>
+                            Profesional responsable
+                        </h3>
+
+                        <div>
+                            <label for="profesional_trabajo_social">
+                                Profesional de Trabajo Social
+                            </label>
+
+                            <input type="text" id="profesional_trabajo_social" name="profesional_trabajo_social"
+                                placeholder="Ingrese el nombre del profesional">
+                        </div>
+
+                        <div>
+                            <label for="fecha_trabajo_social">
+                                Fecha
+                            </label>
+
+                            <input type="date" id="fecha_trabajo_social" name="fecha_trabajo_social">
+                        </div>
+                    </div>
+
+                </details>
+                <!-- ==========================================
+     ACCIONES DEL FORMULARIO
+=========================================== -->
+
+                <div class="acciones-formulario">
+
+                    <button type="submit" class="btn btn-cmc-principal" id="btnGuardar">
+                        Guardar formulario
+                    </button>
+
+                    <button type="reset" class="btn btn-cmc-secundario" id="btnLimpiar">
+                        Limpiar formulario
+                    </button>
+
+                </div>
+                <!-- ========================================== MENSAJE DE ESTADO=========================================== -->
+
+                <div id="mensajeFormulario" class="mensaje-formulario" role="status" aria-live="polite">
+                </div>
+
+
+            </form>
+
+        </div>
+        <!-- ==========================================PIE DEL FORMULARIO=========================================== -->
+
+        <footer class="pie-formulario">
+
+            <p>
+                CMC · Centro Médico Cognitivo e Investigación
+            </p>
+
+            <p>
+                Programa de Neurodesarrollo · Trabajo Social
+            </p>
+
+            <p class="pie-formulario-version">
+                Cuestionario de Tamizaje de Riesgos Psicosociales
+            </p>
+
+        </footer>
+
+    </main>
+
+</body>
+
+</html>
