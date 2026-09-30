@@ -523,8 +523,6 @@
 
                 </details>
 
-                </details>
-
 
                 <!-- ==========================================
                  SESIÓN 2
@@ -1258,9 +1256,7 @@
                         4. Atención en salud y terapias
                     </summary>
 
-                    <!-- ==========================================
-         4.1 ANTECEDENTES DE TERAPIAS
-    =========================================== -->
+                    <!-- ========================================== 4.1 ANTECEDENTES DE TERAPIAS =========================================== -->
 
                     <div>
 
@@ -1467,21 +1463,243 @@
 
                 </details>
 
+                <!-- ==========================================
+                  SESIÓN 5 SEGUIMIENTO DE RECOMENDACIONES DEL EQUIPO TRATANTE
+                  =========================================== -->
+                <details>
+                    <summary>
+                        5. Seguimiento de recomendaciones del equipo tratante
+                    </summary>
+
+                    <div class="pregunta-bloque">
+                        <h3>
+                            Durante el proceso de atención en CMC, ¿la familia ha podido seguir
+                            en casa las recomendaciones o actividades indicadas por los terapeutas,
+                            neuropediatra u otros profesionales del equipo tratante?
+                        </h3>
+
+                        <div class="opciones-verticales">
+                            <label>
+                                <input type="radio" name="seguimiento_recomendaciones" value="regularmente">
+                                Sí, las sigue regularmente
+                            </label>
+
+                            <label>
+                                <input type="radio" name="seguimiento_recomendaciones" value="algunas_veces">
+                                Sí, pero solo algunas veces
+                            </label>
+
+                            <label>
+                                <input type="radio" name="seguimiento_recomendaciones" value="pocas_veces">
+                                Las sigue pocas veces
+                            </label>
+
+                            <label>
+                                <input type="radio" name="seguimiento_recomendaciones" value="no_ha_podido">
+                                No ha podido seguirlas
+                            </label>
+
+                            <label>
+                                <input type="radio" name="seguimiento_recomendaciones" value="no_recibido">
+                                No ha recibido recomendaciones o actividades para realizar en casa
+                            </label>
+
+                            <label>
+                                <input type="radio" name="seguimiento_recomendaciones" value="iniciando_proceso">
+                                Está iniciando el proceso y aún no aplica
+                            </label>
+                        </div>
+                    </div>
+
+
+                    <div class="pregunta-bloque">
+                        <h3>
+                            ¿De qué profesional(es) ha recibido recomendaciones o actividades
+                            para realizar en casa?
+                        </h3>
+
+                        <p class="ayuda">
+                            Puede seleccionar varias opciones.
+                        </p>
+
+                        <div class="opciones-verticales">
+
+                            <label>
+                                <input type="checkbox" name="profesionales_recomendaciones[]" value="neuropediatria">
+                                Neuropediatría
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="profesionales_recomendaciones[]" value="psicologia">
+                                Psicología
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="profesionales_recomendaciones[]" value="neuropsicologia">
+                                Neuropsicología
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="profesionales_recomendaciones[]" value="fonoaudiologia">
+                                Fonoaudiología
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="profesionales_recomendaciones[]"
+                                    value="terapia_ocupacional">
+                                Terapia ocupacional
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="profesionales_recomendaciones[]" value="fisioterapia">
+                                Fisioterapia
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="profesionales_recomendaciones[]" value="psicopedagogia">
+                                Psicopedagogía
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="profesionales_recomendaciones[]" value="otro"
+                                    id="profesional_otro">
+                                Otro profesional
+                            </label>
+
+                            <div id="campo_otro_profesional" class="campo-condicional" hidden>
+                                <label for="otro_profesional_recomendaciones">
+                                    Especifique cuál
+                                </label>
+
+                                <input type="text" id="otro_profesional_recomendaciones"
+                                    name="otro_profesional_recomendaciones" placeholder="Ingrese el profesional">
+                            </div>
+
+                            <label>
+                                <input type="checkbox" name="profesionales_recomendaciones[]" value="no_recuerda">
+                                No recuerda
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="profesionales_recomendaciones[]" value="no_ha_recibido">
+                                No ha recibido recomendaciones
+                            </label>
+
+                        </div>
+                    </div>
+
+
+                    <div class="pregunta-bloque" id="bloque_dificultades_recomendaciones" hidden>
+                        <h3>
+                            Si ha tenido dificultades para seguir las recomendaciones o
+                            actividades indicadas, ¿qué se lo ha dificultado?
+                        </h3>
+
+                        <p class="ayuda">
+                            Puede seleccionar varias opciones.
+                        </p>
+
+                        <div class="opciones-verticales">
+
+                            <label>
+                                <input type="checkbox" name="dificultades_recomendaciones[]" value="falta_tiempo">
+                                Falta de tiempo
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="dificultades_recomendaciones[]"
+                                    value="horarios_laborales_cuidador">
+                                Horarios laborales del padre, madre o cuidador
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="dificultades_recomendaciones[]" value="horarios_escolares">
+                                Horarios escolares del niño, niña o adolescente
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="dificultades_recomendaciones[]"
+                                    value="dificultades_economicas">
+                                Dificultades económicas
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="dificultades_recomendaciones[]" value="falta_materiales">
+                                Falta de materiales o recursos necesarios
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="dificultades_recomendaciones[]"
+                                    value="dificultad_comprender">
+                                Dificultad para comprender las indicaciones
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="dificultades_recomendaciones[]" value="resistencia_nino">
+                                El niño, niña o adolescente presenta dificultad o resistencia
+                                para realizarlas
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="dificultades_recomendaciones[]"
+                                    value="falta_apoyo_familiar">
+                                Falta de apoyo de otros familiares o cuidadores
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="dificultades_recomendaciones[]" value="salud_nino">
+                                Problemas de salud del niño, niña o adolescente
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="dificultades_recomendaciones[]" value="salud_cuidador">
+                                Problemas de salud del cuidador
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="dificultades_recomendaciones[]" value="olvido">
+                                Olvido
+                            </label>
+
+                            <label>
+                                <input type="checkbox" name="dificultades_recomendaciones[]" value="otra"
+                                    id="dificultad_otra">
+                                Otra
+                            </label>
+
+                            <div id="campo_otra_dificultad" class="campo-condicional" hidden>
+                                <label for="otra_dificultad_recomendaciones">
+                                    Especifique cuál
+                                </label>
+
+                                <input type="text" id="otra_dificultad_recomendaciones"
+                                    name="otra_dificultad_recomendaciones" placeholder="Describa la dificultad">
+                            </div>
+
+                            <label>
+                                <input type="checkbox" name="dificultades_recomendaciones[]"
+                                    value="no_presenta_dificultades">
+                                No presenta dificultades
+                            </label>
+
+                        </div>
+                    </div>
+
+                </details>
+
 
                 <!-- ==========================================
-                 SESIÓN 5
+                 SESIÓN 6
                  VIVIENDA Y RECURSOS PARA LA VIDA DIARIA
             =========================================== -->
 
                 <details>
 
                     <summary>
-                        5. Vivienda y recursos para la vida diaria
+                        6. Vivienda y recursos para la vida diaria
                     </summary>
 
-                    <!-- ==========================================
-         5.1 TIPO DE VIVIENDA
-    =========================================== -->
+                    <!-- ========================================== 6.1 TIPO DE VIVIENDA =========================================== -->
 
                     <div>
 
@@ -1533,7 +1751,7 @@
 
 
                     <!-- ==========================================
-         5.2 TIEMPO EN LA VIVIENDA
+         6.2 TIEMPO EN LA VIVIENDA
     =========================================== -->
 
                     <div>
@@ -1570,7 +1788,7 @@
 
 
                     <!-- ==========================================
-         5.3 ESTRATO
+         6.3 ESTRATO
     =========================================== -->
 
                     <div>
@@ -1628,7 +1846,7 @@
 
 
                     <!-- ==========================================
-         5.4 HABITACIONES PARA DORMIR
+         6.4 HABITACIONES PARA DORMIR
     =========================================== -->
 
                     <div>
@@ -1648,7 +1866,7 @@
 
 
                     <!-- ==========================================
-         5.5 DÓNDE DUERME EL NIÑO O LA NIÑA
+         6.5 DÓNDE DUERME EL NIÑO O LA NIÑA
     =========================================== -->
 
                     <div>
@@ -1698,7 +1916,7 @@
 
 
                     <!-- ==========================================
-         5.6 POSIBLE MUDANZA
+         6.6 POSIBLE MUDANZA
     =========================================== -->
 
                     <div>
@@ -1737,7 +1955,7 @@
 
 
                     <!-- ==========================================
-         5.7 ACCESO A INTERNET
+         6.7 ACCESO A INTERNET
     =========================================== -->
 
                     <div>
@@ -1778,7 +1996,7 @@
 
 
                     <!-- ==========================================
-         5.8 DIFICULTADES PARA PAGAR NECESIDADES
+         6.8 DIFICULTADES PARA PAGAR NECESIDADES
     =========================================== -->
 
                     <div>
@@ -1829,7 +2047,7 @@
 
 
                     <!-- ==========================================
-         5.9 INSEGURIDAD ALIMENTARIA
+         6.9 INSEGURIDAD ALIMENTARIA
     =========================================== -->
 
                     <div>
@@ -1880,7 +2098,7 @@
 
 
                     <!-- ==========================================
-         5.10 CONDICIONES DE LA VIVIENDA
+         6.10 CONDICIONES DE LA VIVIENDA
          REGISTRAR CADA SITUACIÓN POR SEPARADO
     =========================================== -->
 
@@ -1992,7 +2210,7 @@
 
 
                     <!-- ==========================================
-         5.11 CONDICIONES AMBIENTALES
+         6.11 CONDICIONES AMBIENTALES
          REGISTRAR CADA SITUACIÓN POR SEPARADO
     =========================================== -->
 
@@ -2142,18 +2360,18 @@
 
 
                 <!-- ==========================================
-                 SESIÓN 6
+                 SESIÓN 7
                  BARRIO Y CONDICIONES PARA APRENDER
             =========================================== -->
 
                 <details>
 
                     <summary>
-                        6. Barrio y condiciones para aprender
+                        7. Barrio y condiciones para aprender
                     </summary>
 
                     <!-- ==========================================
-         6.1 SEGURIDAD DEL BARRIO
+         7.1 SEGURIDAD DEL BARRIO
     =========================================== -->
 
                     <div>
@@ -2249,7 +2467,7 @@
 
 
                     <!-- ==========================================
-         6.2 JUEGO FUERA DE CASA / RUTAS / HORARIOS
+         7.2 JUEGO FUERA DE CASA / RUTAS / HORARIOS
     =========================================== -->
 
                     <div>
@@ -2345,7 +2563,7 @@
 
 
                     <!-- ==========================================
-         6.3 SITUACIONES EN EL BARRIO
+         7.3 SITUACIONES EN EL BARRIO
     =========================================== -->
 
                     <div>
@@ -2536,7 +2754,7 @@
 
 
                     <!-- ==========================================
-         6.4 VÍCTIMA DE HECHO VIOLENTO
+         7.4 VÍCTIMA DE HECHO VIOLENTO
     =========================================== -->
 
                     <div>
@@ -2575,7 +2793,7 @@
 
 
                     <!-- ==========================================
-         6.5 APOYO DE LOS VECINOS
+         7.5 APOYO DE LOS VECINOS
     =========================================== -->
 
                     <div>
@@ -2619,7 +2837,7 @@
 
 
                     <!-- ==========================================
-         6.6 RUIDO EXTERIOR
+         7.6 RUIDO EXTERIOR
     =========================================== -->
 
                     <div>
@@ -2766,7 +2984,7 @@
 
 
                     <!-- ==========================================
-         6.7 FUENTE PRINCIPAL DEL RUIDO
+         7.7 FUENTE PRINCIPAL DEL RUIDO
     =========================================== -->
 
                     <div>
@@ -2827,7 +3045,7 @@
 
 
                     <!-- ==========================================
-         6.8 LUGAR TRANQUILO EN CASA
+         7.8 LUGAR TRANQUILO EN CASA
     =========================================== -->
 
                     <div>
@@ -2873,18 +3091,18 @@
 
 
                 <!-- ==========================================
-                 SESIÓN 7
+                 SESIÓN 8
                  LENGUAJE Y ACOMPAÑAMIENTO EN CASA
             =========================================== -->
 
                 <details>
 
                     <summary>
-                        7. Lenguaje y acompañamiento en casa
+                        8. Lenguaje y acompañamiento en casa
                     </summary>
 
                     <!-- ==========================================
-         7.1 LENGUA O FORMA DE COMUNICACIÓN
+         8.1 LENGUA O FORMA DE COMUNICACIÓN
     =========================================== -->
 
                     <div>
@@ -2940,7 +3158,7 @@
 
 
                     <!-- ==========================================
-         7.2 LIBROS INFANTILES O ILUSTRADOS
+         8.2 LIBROS INFANTILES O ILUSTRADOS
     =========================================== -->
 
                     <div>
@@ -2994,7 +3212,7 @@
 
 
                     <!-- ==========================================
-         7.3 ACTIVIDADES EN LOS ÚLTIMOS 7 DÍAS
+         8.3 ACTIVIDADES EN LOS ÚLTIMOS 7 DÍAS
     =========================================== -->
 
                     <div>
@@ -3074,7 +3292,7 @@
 
 
                     <!-- ==========================================
-         7.4 TRABAJO, CANSANCIO O ESTRÉS
+         8.4 TRABAJO, CANSANCIO O ESTRÉS
     =========================================== -->
 
                     <div>
@@ -3117,7 +3335,7 @@
 
 
                     <!-- ==========================================
-         7.5 ACOMPAÑAMIENTO DEL ADULTO
+         8.5 ACOMPAÑAMIENTO DEL ADULTO
          ÚLTIMAS DOS SEMANAS
     =========================================== -->
 
@@ -3457,7 +3675,7 @@
 
 
                     <!-- ==========================================
-         7.6 DINÁMICA FAMILIAR FRENTE AL APRENDIZAJE
+         8.6 DINÁMICA FAMILIAR FRENTE AL APRENDIZAJE
     =========================================== -->
 
                     <div>
@@ -3800,18 +4018,18 @@
 
 
                 <!-- ==========================================
-                 SESIÓN 8
+                 SESIÓN 9
                  ALIMENTACIÓN, ACTIVIDAD, PANTALLAS Y SUEÑO
             =========================================== -->
 
                 <details>
 
                     <summary>
-                        8. Alimentación, actividad, pantallas y sueño
+                        9. Alimentación, actividad, pantallas y sueño
                     </summary>
 
                     <!-- ==========================================
-         8.1 FRECUENCIA DE CONSUMO DE ALIMENTOS
+         9.1 FRECUENCIA DE CONSUMO DE ALIMENTOS
     =========================================== -->
 
                     <div>
@@ -4443,7 +4661,7 @@
 
 
                     <!-- ==========================================
-         8.2 DESAYUNO
+         9.2 DESAYUNO
     =========================================== -->
 
                     <div>
@@ -4463,7 +4681,7 @@
 
 
                     <!-- ==========================================
-         8.3 VARIEDAD DE ALIMENTOS
+         9.3 VARIEDAD DE ALIMENTOS
     =========================================== -->
 
                     <div>
@@ -4504,7 +4722,7 @@
 
 
                     <!-- ==========================================
-         8.4 ACTIVIDAD FÍSICA Y JUEGO AL AIRE LIBRE
+         9.4 ACTIVIDAD FÍSICA Y JUEGO AL AIRE LIBRE
     =========================================== -->
 
                     <div>
@@ -4540,7 +4758,7 @@
 
 
                     <!-- ==========================================
-         8.5 TIEMPO DE PANTALLAS
+         9.5 TIEMPO DE PANTALLAS
     =========================================== -->
 
                     <div>
@@ -4592,7 +4810,7 @@
 
 
                     <!-- ==========================================
-         8.6 SUEÑO
+         9.6 SUEÑO
     =========================================== -->
 
                     <div>
@@ -4637,7 +4855,7 @@
 
 
                     <!-- ==========================================
-         8.7 HORARIOS DE SUEÑO
+         9.7 HORARIOS DE SUEÑO
     =========================================== -->
 
                     <div>
@@ -4675,7 +4893,7 @@
 
 
                     <!-- ==========================================
-         8.8 MEDICAMENTOS O SUPLEMENTOS PARA DORMIR
+         9.8 MEDICAMENTOS O SUPLEMENTOS PARA DORMIR
     =========================================== -->
 
                     <div>
@@ -4719,17 +4937,17 @@
 
 
                 <!-- ==========================================
-                 SESIÓN 9
+                 SESIÓN 10
                  CAMBIOS Y NECESIDADES DE APOYO
             =========================================== -->
 
                 <details>
 
                     <summary>
-                        9. Cambios y necesidades de apoyo
+                        10. Cambios y necesidades de apoyo
                     </summary>
 
-                    <!-- 9.1 CAMBIOS RECIENTES -->
+                    <!-- 10.1 CAMBIOS RECIENTES -->
                     <div>
                         <h3>
                             Cambios recientes
@@ -4765,7 +4983,7 @@
                         </div>
                     </div>
 
-                    <!-- 9.2 ACTIVIDAD ACORDADA -->
+                    <!-- 10.2 ACTIVIDAD ACORDADA -->
                     <div>
                         <h3>
                             Actividad acordada desde la última visita
@@ -4792,7 +5010,7 @@
                         </label>
                     </div>
 
-                    <!-- 9.3 APOYO MÁS ÚTIL -->
+                    <!-- 10.3 APOYO MÁS ÚTIL -->
                     <div>
                         <h3>
                             Necesidades de apoyo
@@ -4847,17 +5065,17 @@
 
 
                 <!-- ==========================================
-                 SESIÓN 10
+                 SESIÓN 11
                  OBSERVACIONES Y RESULTADO DEL TAMIZAJE
             =========================================== -->
 
                 <details>
 
                     <summary>
-                        10. Observaciones y resultado del tamizaje
+                        11. Observaciones y resultado del tamizaje
                     </summary>
 
-                    <!-- 10.1 COMPRENSIÓN DE LAS PREGUNTAS -->
+                    <!-- 11.1 COMPRENSIÓN DE LAS PREGUNTAS -->
                     <div>
                         <h3>
                             Observaciones durante la aplicación
@@ -4909,7 +5127,7 @@
                         </div>
                     </div>
 
-                    <!-- 10.2 RESULTADO DEL TAMIZAJE -->
+                    <!-- 11.2 RESULTADO DEL TAMIZAJE -->
                     <div>
                         <h3>
                             Resultado del tamizaje psicosocial – Trabajo Social
@@ -5037,7 +5255,7 @@
                         </div>
                     </div>
 
-                    <!-- 10.3 PROFESIONAL RESPONSABLE -->
+                    <!-- 11.3 PROFESIONAL RESPONSABLE -->
                     <div>
                         <h3>
                             Profesional responsable
