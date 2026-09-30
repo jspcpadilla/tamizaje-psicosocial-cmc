@@ -94,6 +94,8 @@ main {
 
     justify-content: center;
 
+    gap: 30px;
+
     text-align: center;
 }
 
@@ -101,6 +103,11 @@ main {
 
     width: 100%;
 }
+
+
+/* =========================================================
+   TÍTULO PRINCIPAL
+   ========================================================= */
 
 .encabezado-formulario h1 {
 
@@ -115,26 +122,65 @@ main {
     line-height: 1.25;
 }
 
-.subtitulo-formulario {
+
+/* =========================================================
+   SUBTÍTULO
+   ========================================================= */
+
+.encabezado-formulario h1.subtitulo-formulario {
 
     margin-top: 12px;
 
     margin-bottom: 5px;
 
-    font-size: 1.15rem;
+    font-size: 2rem;
 
-    color: var(--cmc-texto);
+    color: #000000;
 
-    font-weight: 500;
+    font-weight: 700;
 }
 
-.area-formulario {
+
+/* =========================================================
+   ÁREA / INSTITUCIÓN
+   ========================================================= */
+
+.encabezado-formulario h1.area-formulario {
 
     margin: 0;
 
-    color: var(--cmc-texto-secundario);
+    color: #000000;
 
-    font-size: 0.95rem;
+    font-size: 2rem;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   LOGO CMC
+   ========================================================= */
+
+.encabezado-logo {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+.encabezado-logo img {
+
+    display: block;
+
+    width: 150px;
+
+    height: auto;
+
+    max-width: 100%;
 }
 
 
@@ -187,6 +233,7 @@ details summary {
 }
 
 details summary::-webkit-details-marker {
+
     display: none;
 }
 
@@ -243,6 +290,8 @@ details > div {
     padding: 22px;
 
     border-top: 1px solid var(--cmc-borde);
+
+    background-color: var(--cmc-blanco);
 }
 
 details > div + div {
@@ -250,11 +299,20 @@ details > div + div {
     border-top: 1px solid #EEEEEE;
 }
 
+
+/* =========================================================
+   TÍTULOS DE LAS PREGUNTAS
+   ========================================================= */
+
 details h3 {
+
+    position: relative;
 
     margin-top: 0;
 
     margin-bottom: 12px;
+
+    padding-left: 12px;
 
     color: var(--cmc-morado);
 
@@ -263,11 +321,44 @@ details h3 {
     font-weight: 700;
 }
 
+details h3::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    top: 3px;
+
+    bottom: 3px;
+
+    width: 4px;
+
+    background-color: var(--cmc-morado);
+
+    border-radius: 4px;
+}
+
+
+/* =========================================================
+   TEXTOS
+   ========================================================= */
+
 details p {
 
     margin-bottom: 12px;
 
     color: var(--cmc-texto);
+
+    font-size: 0.95rem;
+}
+
+details h3 + p {
+
+    margin-top: -4px;
+
+    color: var(--cmc-texto-secundario);
 }
 
 
@@ -319,7 +410,14 @@ textarea {
     min-height: 110px;
 
     resize: vertical;
+
+    line-height: 1.5;
 }
+
+
+/* =========================================================
+   FOCUS DE CAMPOS
+   ========================================================= */
 
 input[type="text"]:focus,
 input[type="tel"]:focus,
@@ -368,7 +466,8 @@ label:has(input[type="checkbox"]) {
     cursor: pointer;
 
     transition:
-        background-color 0.2s ease;
+        background-color 0.2s ease,
+        border-color 0.2s ease;
 }
 
 label:has(input[type="radio"]):hover,
@@ -379,224 +478,34 @@ label:has(input[type="checkbox"]):hover {
 
 
 /* =========================================================
-   TEXTOS DE APOYO
-   ========================================================= */
-
-.form-text {
-
-    color: var(--cmc-texto-secundario);
-
-    font-size: 0.9rem;
-}
-
-
-/* =========================================================
-   RESPONSIVE - TABLET
-   ========================================================= */
-
-@media (max-width: 991.98px) {
-
-    main {
-
-        padding: 20px 12px;
-    }
-
-    .encabezado-formulario {
-
-        padding: 28px 22px;
-    }
-
-    .encabezado-formulario h1 {
-
-        font-size: 1.7rem;
-    }
-
-    .subtitulo-formulario {
-
-        font-size: 1.05rem;
-    }
-
-    details summary {
-
-        min-height: 62px;
-
-        padding: 16px 18px;
-
-        font-size: 1rem;
-    }
-
-    details > div {
-
-        padding: 18px;
-    }
-}
-
-
-/* =========================================================
-   RESPONSIVE - CELULAR
-   ========================================================= */
-
-@media (max-width: 575.98px) {
-
-    main {
-
-        padding: 10px 8px;
-    }
-
-    .formulario-container {
-
-        width: 100%;
-    }
-
-    .encabezado-formulario {
-
-        padding: 24px 16px;
-
-        border-radius: 12px;
-
-        margin-bottom: 14px;
-    }
-
-    .encabezado-formulario h1 {
-
-        font-size: 1.4rem;
-    }
-
-    .subtitulo-formulario {
-
-        font-size: 1.4rem;
-    }
-
-    .area-formulario {
-
-        font-size: 1.4rem;
-    }
-
-    details {
-
-        border-radius: 11px;
-
-        margin-bottom: 10px;
-    }
-
-    details summary {
-
-        min-height: 58px;
-
-        padding: 14px;
-
-        font-size: 0.95rem;
-    }
-
-    details summary::after {
-
-        width: 27px;
-
-        height: 27px;
-
-        font-size: 1rem;
-    }
-
-    details > div {
-
-        padding: 16px 14px;
-    }
-
-    details h3 {
-
-        font-size: 0.95rem;
-    }
-
-    input[type="text"],
-    input[type="tel"],
-    input[type="date"],
-    input[type="number"],
-    select,
-    textarea {
-
-        font-size: 16px;
-    }
-}
-/* =========================================================
    BLOQUES INTERNOS DE LAS PREGUNTAS
    ========================================================= */
 
-details > div {
-    background-color: var(--cmc-blanco);
-}
-
-/* Separación visual entre grupos */
-
 details > div:not(:first-of-type) {
+
     border-top: 1px solid #EEEEEE;
 }
 
-/* Títulos de cada grupo */
+details > div > div {
 
-details h3 {
-    position: relative;
-
-    padding-left: 12px;
-}
-
-details h3::before {
-    content: "";
-
-    position: absolute;
-
-    left: 0;
-    top: 3px;
-    bottom: 3px;
-
-    width: 4px;
-
-    background-color: var(--cmc-morado);
-
-    border-radius: 4px;
+    margin-bottom: 12px;
 }
 
 
 /* =========================================================
-   CAMPOS
+   CAMPOS DE TEXTO
    ========================================================= */
 
 details input:not([type="radio"]):not([type="checkbox"]),
 details select,
 details textarea {
+
     background-color: #FFFFFF;
 }
 
+details input[type="number"] {
 
-/* =========================================================
-   OPCIONES DE RESPUESTA
-   ========================================================= */
-
-details label:has(input[type="radio"]),
-details label:has(input[type="checkbox"]) {
-
-    border: 1px solid transparent;
-
-    transition:
-        background-color 0.2s ease,
-        border-color 0.2s ease;
-}
-
-details label:has(input[type="radio"]):hover,
-details label:has(input[type="checkbox"]):hover {
-
-    border-color: #E8D2E5;
-
-    background-color: var(--cmc-morado-claro);
-}
-
-
-/* =========================================================
-   CAMPOS DE TEXTO LARGO
-   ========================================================= */
-
-details textarea {
-
-    line-height: 1.5;
+    max-width: 100%;
 }
 
 
@@ -614,87 +523,18 @@ details textarea::placeholder {
 
 
 /* =========================================================
-   CAMPOS NUMÉRICOS
+   OPCIONES DE RESPUESTA
    ========================================================= */
 
-details input[type="number"] {
+details label:has(input[type="radio"]),
+details label:has(input[type="checkbox"]) {
 
-    max-width: 100%;
+    border: 1px solid transparent;
 }
 
 
 /* =========================================================
-   SEPARACIÓN ENTRE PREGUNTAS
-   ========================================================= */
-
-details > div > div {
-
-    margin-bottom: 12px;
-}
-
-
-/* =========================================================
-   TEXTO INFORMATIVO
-   ========================================================= */
-
-details p {
-
-    font-size: 0.95rem;
-}
-
-details h3 + p {
-
-    margin-top: -4px;
-
-    color: var(--cmc-texto-secundario);
-}
-/* =========================================================
-   CONTENEDORES DE PREGUNTAS
-   ========================================================= */
-
-.pregunta-bloque {
-    padding: 22px;
-    background-color: var(--cmc-blanco);
-    border: 1px solid #EEEEEE;
-    border-radius: 12px;
-    margin-bottom: 18px;
-}
-
-.pregunta-bloque:last-child {
-    margin-bottom: 0;
-}
-
-.pregunta-bloque h3 {
-    margin-bottom: 18px;
-}
-
-
-/* =========================================================
-   ETIQUETAS
-   ========================================================= */
-
-.pregunta-bloque label:not(:has(input[type="radio"])),
-.pregunta-bloque label:not(:has(input[type="checkbox"])) {
-    display: block;
-    margin-bottom: 6px;
-}
-
-
-/* =========================================================
-   TEXTO DESCRIPTIVO DE LAS PREGUNTAS
-   ========================================================= */
-
-.descripcion-pregunta {
-    margin-bottom: 16px;
-
-    color: var(--cmc-texto-secundario);
-
-    font-size: 0.94rem;
-}
-
-
-/* =========================================================
-   GRUPOS DE OPCIONES
+   OPCIONES EN DOS COLUMNAS
    ========================================================= */
 
 .opciones {
@@ -734,73 +574,6 @@ details h3 + p {
     border-color: var(--cmc-morado);
 
     background-color: var(--cmc-morado-claro);
-}
-
-
-/* =========================================================
-   CAMPOS DENTRO DE COLUMNAS BOOTSTRAP
-   ========================================================= */
-
-.row > [class*="col-"] {
-    margin-bottom: 4px;
-}
-
-
-/* =========================================================
-   CAMPOS DE TEXTO
-   ========================================================= */
-
-.campo {
-
-    margin-bottom: 16px;
-}
-
-.campo:last-child {
-    margin-bottom: 0;
-}
-
-
-/* =========================================================
-   AYUDAS / ACLARACIONES
-   ========================================================= */
-
-.ayuda {
-
-    display: block;
-
-    margin-top: -8px;
-    margin-bottom: 14px;
-
-    color: var(--cmc-texto-secundario);
-
-    font-size: 0.85rem;
-}
-
-
-/* =========================================================
-   SECCIONES DESTACADAS
-   ========================================================= */
-
-.bloque-destacado {
-
-    border-left: 4px solid var(--cmc-morado);
-
-    background-color: var(--cmc-morado-claro);
-
-    padding: 16px;
-
-    border-radius: 8px;
-
-    margin-bottom: 18px;
-}
-
-
-/* =========================================================
-   TEXTAREAS
-   ========================================================= */
-
-.pregunta-bloque textarea {
-    margin-bottom: 0;
 }
 
 
@@ -847,10 +620,452 @@ details h3 + p {
 
 
 /* =========================================================
-   RESPONSIVE
+   CONTENEDORES DE PREGUNTAS
    ========================================================= */
 
-@media (max-width: 767.98px) {
+.pregunta-bloque {
+
+    padding: 22px;
+
+    background-color: var(--cmc-blanco);
+
+    border: 1px solid #EEEEEE;
+
+    border-radius: 12px;
+
+    margin-bottom: 18px;
+}
+
+.pregunta-bloque:last-child {
+
+    margin-bottom: 0;
+}
+
+.pregunta-bloque h3 {
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   ETIQUETAS DENTRO DE PREGUNTAS
+   ========================================================= */
+
+.pregunta-bloque label:not(:has(input[type="radio"])),
+.pregunta-bloque label:not(:has(input[type="checkbox"])) {
+
+    display: block;
+
+    margin-bottom: 6px;
+}
+
+
+/* =========================================================
+   DESCRIPCIONES
+   ========================================================= */
+
+.descripcion-pregunta {
+
+    margin-bottom: 16px;
+
+    color: var(--cmc-texto-secundario);
+
+    font-size: 0.94rem;
+}
+
+
+/* =========================================================
+   AYUDAS / ACLARACIONES
+   ========================================================= */
+
+.ayuda {
+
+    display: block;
+
+    margin-top: -8px;
+
+    margin-bottom: 14px;
+
+    color: var(--cmc-texto-secundario);
+
+    font-size: 0.85rem;
+}
+
+
+/* =========================================================
+   SECCIONES DESTACADAS
+   ========================================================= */
+
+.bloque-destacado {
+
+    border-left: 4px solid var(--cmc-morado);
+
+    background-color: var(--cmc-morado-claro);
+
+    padding: 16px;
+
+    border-radius: 8px;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   CAMPOS DENTRO DE COLUMNAS BOOTSTRAP
+   ========================================================= */
+
+.row > [class*="col-"] {
+
+    margin-bottom: 4px;
+}
+
+
+/* =========================================================
+   CAMPOS DE TEXTO
+   ========================================================= */
+
+.campo {
+
+    margin-bottom: 16px;
+}
+
+.campo:last-child {
+
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   CAMPOS CONDICIONALES
+   ========================================================= */
+
+.campo-condicional {
+
+    margin-top: 12px;
+
+    padding-left: 28px;
+}
+
+.campo-condicional[hidden] {
+
+    display: none;
+}
+
+
+/* =========================================================
+   TEXTO INFORMATIVO
+   ========================================================= */
+
+.form-text {
+
+    color: var(--cmc-texto-secundario);
+
+    font-size: 0.9rem;
+}
+
+
+/* =========================================================
+   ACCIONES DEL FORMULARIO
+   ========================================================= */
+
+.acciones-formulario {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 35px;
+
+    padding: 25px;
+
+    background-color: #FFFFFF;
+
+    border: 1px solid var(--cmc-borde);
+
+    border-radius: 16px;
+
+    box-shadow: var(--cmc-sombra);
+}
+
+
+/* =========================================================
+   BOTÓN PRINCIPAL
+   ========================================================= */
+
+.btn-cmc-principal {
+
+    background-color: var(--cmc-morado);
+
+    color: #FFFFFF;
+
+    border: 2px solid var(--cmc-morado);
+
+    border-radius: 10px;
+
+    min-height: 48px;
+
+    padding: 10px 24px;
+
+    font-weight: 600;
+
+    transition: all 0.2s ease;
+}
+
+.btn-cmc-principal:hover {
+
+    background-color: var(--cmc-morado-oscuro);
+
+    border-color: var(--cmc-morado-oscuro);
+
+    color: #FFFFFF;
+}
+
+
+/* =========================================================
+   BOTÓN SECUNDARIO
+   ========================================================= */
+
+.btn-cmc-secundario {
+
+    background-color: #FFFFFF;
+
+    color: var(--cmc-morado);
+
+    border: 2px solid var(--cmc-morado);
+
+    border-radius: 10px;
+
+    min-height: 48px;
+
+    padding: 10px 24px;
+
+    font-weight: 600;
+
+    transition: all 0.2s ease;
+}
+
+.btn-cmc-secundario:hover {
+
+    background-color: var(--cmc-morado-claro);
+
+    color: var(--cmc-morado-oscuro);
+}
+
+
+/* =========================================================
+   MENSAJE DEL FORMULARIO
+   ========================================================= */
+
+.mensaje-formulario {
+
+    min-height: 24px;
+
+    margin-top: 15px;
+
+    text-align: center;
+
+    font-size: 0.95rem;
+
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   PIE DEL FORMULARIO
+   ========================================================= */
+
+.pie-formulario {
+
+    margin-top: 30px;
+
+    padding: 25px 15px;
+
+    text-align: center;
+
+    color: var(--cmc-texto-secundario);
+
+    font-size: 0.9rem;
+}
+
+.pie-formulario p {
+
+    margin-bottom: 5px;
+}
+
+.pie-formulario-version {
+
+    margin-top: 10px;
+
+    font-size: 0.8rem;
+}
+
+
+/* =========================================================
+   RESPONSIVE - TABLET
+   ========================================================= */
+
+@media (max-width: 991.98px) {
+
+    main {
+
+        padding: 20px 12px;
+    }
+
+    .encabezado-formulario {
+
+        padding: 28px 22px;
+    }
+
+    .encabezado-formulario h1 {
+
+        font-size: 1.7rem;
+    }
+
+    .subtitulo-formulario {
+
+        font-size: 1.05rem;
+    }
+
+    details summary {
+
+        min-height: 62px;
+
+        padding: 16px 18px;
+
+        font-size: 1rem;
+    }
+
+    details > div {
+
+        padding: 18px;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE - TABLET PEQUEÑA
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .encabezado-contenido {
+
+        gap: 20px;
+    }
+
+    .encabezado-logo img {
+
+        width: 120px;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE - CELULAR
+   ========================================================= */
+
+@media (max-width: 576px) {
+
+    main {
+
+        padding: 10px 8px;
+    }
+
+    .formulario-container {
+
+        width: 100%;
+    }
+
+    .encabezado-formulario {
+
+        padding: 24px 16px;
+
+        border-radius: 12px;
+
+        margin-bottom: 14px;
+    }
+
+    .encabezado-contenido {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 15px;
+    }
+
+    .encabezado-logo img {
+
+        width: 130px;
+    }
+
+    .encabezado-formulario h1 {
+
+        font-size: 1.4rem;
+    }
+
+    .encabezado-formulario h1.subtitulo-formulario {
+
+        font-size: 1rem;
+
+        color: #000000;
+    }
+
+    .encabezado-formulario h1.area-formulario {
+
+        font-size: 0.85rem;
+
+        color: #000000;
+    }
+
+    details {
+
+        border-radius: 11px;
+
+        margin-bottom: 10px;
+    }
+
+    details summary {
+
+        min-height: 58px;
+
+        padding: 14px;
+
+        font-size: 0.95rem;
+    }
+
+    details summary::after {
+
+        width: 27px;
+
+        height: 27px;
+
+        font-size: 1rem;
+    }
+
+    details > div {
+
+        padding: 16px 14px;
+    }
+
+    details h3 {
+
+        font-size: 0.95rem;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="number"],
+    select,
+    textarea {
+
+        font-size: 16px;
+    }
 
     .pregunta-bloque {
 
@@ -863,11 +1078,25 @@ details h3 + p {
 
         grid-template-columns: 1fr;
     }
+
+    .acciones-formulario {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        padding: 20px;
+    }
+
+    .acciones-formulario .btn {
+
+        width: 100%;
+    }
 }
 
 
 /* =========================================================
-   TABLET
+   RESPONSIVE - TABLET INTERMEDIA
    ========================================================= */
 
 @media (min-width: 768px) and (max-width: 1199.98px) {
@@ -876,174 +1105,4 @@ details h3 + p {
 
         padding: 20px;
     }
-}
-/* =========================================================
-   LOGO CMC
-   ========================================================= */
-
-.encabezado-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-}
-
-.encabezado-logo img {
-    display: block;
-    width: 150px;
-    height: auto;
-    max-width: 100%;
-}
-
-/* =========================================================
-   ENCABEZADO CON LOGO
-   ========================================================= */
-
-.encabezado-contenido {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-
-/* =========================================================
-   RESPONSIVE - TABLET
-   ========================================================= */
-
-@media (max-width: 768px) {
-
-    .encabezado-contenido {
-        gap: 20px;
-    }
-
-    .encabezado-logo img {
-        width: 120px;
-    }
-
-}
-
-/* =========================================================
-   RESPONSIVE - CELULAR
-   ========================================================= */
-
-@media (max-width: 576px) {
-
-    .encabezado-contenido {
-        flex-direction: column;
-        text-align: center;
-        gap: 15px;
-    }
-
-    .encabezado-logo img {
-        width: 130px;
-    }
-
-}
-/* =========================================================
-   ACCIONES DEL FORMULARIO
-   ========================================================= */
-
-.acciones-formulario {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    margin-top: 35px;
-    padding: 25px;
-    background-color: #ffffff;
-    border: 1px solid var(--cmc-borde);
-    border-radius: 16px;
-    box-shadow: var(--cmc-sombra);
-}
-
-
-/* BOTÓN PRINCIPAL */
-
-.btn-cmc-principal {
-    background-color: var(--cmc-morado);
-    color: #ffffff;
-    border: 2px solid var(--cmc-morado);
-    border-radius: 10px;
-    min-height: 48px;
-    padding: 10px 24px;
-    font-weight: 600;
-    transition: all 0.2s ease;
-}
-
-.btn-cmc-principal:hover {
-    background-color: var(--cmc-morado-oscuro);
-    border-color: var(--cmc-morado-oscuro);
-    color: #ffffff;
-}
-
-
-/* BOTÓN SECUNDARIO */
-
-.btn-cmc-secundario {
-    background-color: #ffffff;
-    color: var(--cmc-morado);
-    border: 2px solid var(--cmc-morado);
-    border-radius: 10px;
-    min-height: 48px;
-    padding: 10px 24px;
-    font-weight: 600;
-    transition: all 0.2s ease;
-}
-
-.btn-cmc-secundario:hover {
-    background-color: var(--cmc-morado-claro);
-    color: var(--cmc-morado-oscuro);
-}
-
-
-/* =========================================================
-   MENSAJE DEL FORMULARIO
-   ========================================================= */
-
-.mensaje-formulario {
-    min-height: 24px;
-    margin-top: 15px;
-    text-align: center;
-    font-size: 0.95rem;
-    font-weight: 500;
-}
-
-
-/* =========================================================
-   PIE DEL FORMULARIO
-   ========================================================= */
-
-.pie-formulario {
-    margin-top: 30px;
-    padding: 25px 15px;
-    text-align: center;
-    color: var(--cmc-texto-secundario);
-    font-size: 0.9rem;
-}
-
-.pie-formulario p {
-    margin-bottom: 5px;
-}
-
-.pie-formulario-version {
-    margin-top: 10px;
-    font-size: 0.8rem;
-}
-
-
-/* =========================================================
-   RESPONSIVE
-   ========================================================= */
-
-@media (max-width: 576px) {
-
-    .acciones-formulario {
-        flex-direction: column;
-        align-items: stretch;
-        padding: 20px;
-    }
-
-    .acciones-formulario .btn {
-        width: 100%;
-    }
-
 }
