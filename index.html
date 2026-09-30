@@ -260,12 +260,6 @@
 
                         </div>
 
-
-                        <p>
-                            Si no tiene documento, indíquelo al equipo.
-                            La edad en años y meses se calcula a partir de la fecha de nacimiento.
-                        </p>
-
                     </div>
 
 
@@ -315,27 +309,40 @@
                         </h3>
 
                         <div>
-
-                            <label for="localidad_comuna">
-                                Localidad/comuna
+                            <label for="Georreferenciacion_barrio">
+                                Localidad
                             </label>
 
-                            <input type="text" id="localidad_comuna" name="localidad_comuna"
-                                placeholder="Ingrese la localidad o comuna">
+                            <select id="Georreferenciacion_barrio" name="Georreferenciacion_barrio">
+
+                                <option value="">
+                                    Seleccione una localidad
+                                </option>
+
+                                <option value="centro_norte_historico">
+                                    Centro Norte Histórico
+                                </option>
+
+                                <option value="rioamar">
+                                    Ríoamar
+                                </option>
+
+                                <option value="suroriente">
+                                    Suroriente
+                                </option>
+
+                                <option value="suroccidente">
+                                    Suroccidente
+                                </option>
+
+                                <option value="metropolitana">
+                                    Metropolitana
+                                </option>
+
+                            </select>
 
                         </div>
 
-
-                        <div>
-
-                            <label for="sector_zona">
-                                Sector/zona
-                            </label>
-
-                            <input type="text" id="sector_zona" name="sector_zona"
-                                placeholder="Ingrese el sector o zona">
-
-                        </div>
 
                     </div>
 
@@ -393,6 +400,13 @@
 
                             <input type="tel" id="celular_principal" name="celular_principal"
                                 placeholder="Ingrese el celular principal">
+
+                            <label for="email">
+                                Correo electrónico
+                            </label>
+
+                            <input type="email" id="email" name="email"     
+                                placeholder="Ingrese el correo electrónico">
 
                         </div>
 
@@ -1278,7 +1292,10 @@
 
                         <label>
                             <input type="radio" name="asistido_terapias_antes" value="si_otra_institucion">
-                            Sí, en otra institución
+                                Sí, en otra institución  <label for="otra_institucion_terapias"> ¿Cual?</label>
+                                <input type="text" id="otra_institucion_terapias" name="otra_institucion_terapias"
+                                    placeholder="Especifique la institución">
+                            </input>
                         </label>
 
 
@@ -1748,10 +1765,80 @@
                         </select>
 
                     </div>
+                    <!-- ==========================================
+         6.2 MATERIAL EN LA VIVIENDA
+    =========================================== -->
+
+                    <div>
+                        <h3>
+                            ¿De que material se encuentra construida la vivienda?
+                        </h3>
+
+                        <label for="material_vivienda">
+                            Material de la vivienda
+                        </label>
+
+                        <select id="material_vivienda" name="material_vivienda">
+
+                            <option value="">
+                                Seleccione una opción
+                            </option>
+
+                            <option value="concreto_armado_hormigon_bloques_cemento">
+                                Concreto armado (Hormigon) y bloques de cemento
+                            </option>
+
+                            <option value="madera_bahareque_guadua_cana">
+                                Madera, bahareque, guadua, caña o similares
+                            </option>
+
+                            <option value="materiales_reciclados_desecho">
+                                Materiales reciclados o de desecho (latas, cartón, plástico, etc.)
+                            </option>
+
+                        </select>
+                    </div>
+                    <!-- ==========================================
+         6.3 MATERIAL PISO EN LA VIVIENDA
+    =========================================== -->
+                    <div>
+                        <h3>
+                            ¿En que condiciones se encuentra el piso de la vivienda?
+                        </h3>
+
+                        <label for="material_piso">
+                            Material del piso
+                        </label>
+
+                        <select id="material_piso" name="material_piso">
+
+                            <option value="">
+                                Seleccione una opción
+                            </option>
+
+                            <option value="ceramicos_porcelanato">
+                                Ceramicos y porcelanato
+                            </option>
+
+                            <option value="madera_y_derivados">
+                                Maderas y derivados
+                            </option>
+
+                            <option value="piedras_naturales_concretos">
+                                Piedras naturales y concretos
+                            </option>
+
+                            <option value="obra_negra">
+                                Obra negra (Piso sin acabado)
+                            </option>
+
+                        </select>
+                    </div>
+
 
 
                     <!-- ==========================================
-         6.2 TIEMPO EN LA VIVIENDA
+         6.4 TIEMPO EN LA VIVIENDA
     =========================================== -->
 
                     <div>
@@ -1783,6 +1870,37 @@
                                 placeholder="Ingrese los años">
 
                         </div>
+                    
+
+                    <div>
+
+                        <h3>
+                            Servicios básicos disponibles en la vivienda
+                        </h3>
+
+                        <p>
+                            ¿Con cuáles servicios básicos cuenta la vivienda?
+                            Puede marcar varias.
+                        </p>
+
+
+                        <label>
+                            <input type="checkbox" name="servicios_basicos[]" value="agua">
+                            Agua
+                        </label>
+
+
+                        <label>
+                            <input type="checkbox" name="servicios_basicos[]" value="gas">
+                            Gas
+                        </label>
+
+
+                        <label>
+                            <input type="checkbox" name="servicios_basicos[]" value="luz">
+                            Luz
+                        </label>
+
 
                     </div>
 
