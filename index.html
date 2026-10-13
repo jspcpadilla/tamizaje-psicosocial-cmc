@@ -80,6 +80,17 @@
                       =========================================== -->
 
                     <div>
+                        <h3>
+                            Código seudonimizado del niño o la niña
+                        </h3>
+
+                        <label for="codigo_nino">
+                            Código del niño o la niña
+                        </label>
+
+                        <input type="text" id="codigo_nino" name="codigo_nino"
+                            placeholder="P. ej. CMC-001">
+
 
                         <h3>
                             Fecha de aplicación
@@ -177,7 +188,7 @@
 
 
                     <!-- ==========================================
-         1.4 NOMBRE Y FECHA DE NACIMIENTO
+         1.4 NOMBRE Y FECHA DE NACIMIENTO Y SEXO DEL NIÑO O LA NIÑA
     =========================================== -->
 
                     <div>
@@ -205,6 +216,30 @@
                             </label>
 
                             <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+
+                        </div>
+
+                        <div>
+
+                            <label for="sexo">
+                                Sexo
+                            </label>
+
+                            <select id="sexo" name="sexo">
+
+                                <option value="">
+                                    Seleccione el sexo
+                                </option>
+
+                                <option value="masculino">
+                                    Masculino
+                                </option>
+
+                                <option value="femenino">
+                                    Femenino
+                                </option>
+
+                            </select>
 
                         </div>
 
@@ -405,8 +440,7 @@
                                 Correo electrónico
                             </label>
 
-                            <input type="email" id="email" name="email"     
-                                placeholder="Ingrese el correo electrónico">
+                            <input type="email" id="email" name="email" placeholder="Ingrese el correo electrónico">
 
                         </div>
 
@@ -762,6 +796,24 @@
 
                         </select>
 
+                        <label for="dificultad_leer_familiar">
+                            ¿Algún familiar directo tuvo dificultades importantes para aprender a leer?
+                        </label>
+                        <select name="dificultad_leer_familiar" id="dificultad_leer_familiar">
+                            <option value="">
+                                Seleccione una opción
+                            </option>
+                            <option value="si">
+                                Sí
+                            </option>
+                            <option value="no">
+                                No
+                            </option>
+                            <option value="no_sabe">
+                                No sabe
+                            </option>
+                        </select>
+
                     </div>
 
 
@@ -909,7 +961,7 @@
                     <div>
 
                         <h3>
-                            Red de apoyo para el cuidado
+                            Red de apoyo para el cuidador
                         </h3>
 
                         <p>
@@ -1292,9 +1344,9 @@
 
                         <label>
                             <input type="radio" name="asistido_terapias_antes" value="si_otra_institucion">
-                                Sí, en otra institución  <label for="otra_institucion_terapias"> ¿Cual?</label>
-                                <input type="text" id="otra_institucion_terapias" name="otra_institucion_terapias"
-                                    placeholder="Especifique la institución">
+                            Sí, en otra institución <label for="otra_institucion_terapias"> ¿Cual?</label>
+                            <input type="text" id="otra_institucion_terapias" name="otra_institucion_terapias"
+                                placeholder="Especifique la institución">
                             </input>
                         </label>
 
@@ -1870,609 +1922,609 @@
                                 placeholder="Ingrese los años">
 
                         </div>
-                    
-
-                    <div>
-
-                        <h3>
-                            Servicios básicos disponibles en la vivienda
-                        </h3>
-
-                        <p>
-                            ¿Con cuáles servicios básicos cuenta la vivienda?
-                            Puede marcar varias.
-                        </p>
 
 
-                        <label>
-                            <input type="checkbox" name="servicios_basicos[]" value="agua">
-                            Agua
-                        </label>
+                        <div>
+
+                            <h3>
+                                Servicios básicos disponibles en la vivienda
+                            </h3>
+
+                            <p>
+                                ¿Con cuáles servicios básicos cuenta la vivienda?
+                                Puede marcar varias.
+                            </p>
 
 
-                        <label>
-                            <input type="checkbox" name="servicios_basicos[]" value="gas">
-                            Gas
-                        </label>
+                            <label>
+                                <input type="checkbox" name="servicios_basicos[]" value="agua">
+                                Agua
+                            </label>
 
 
-                        <label>
-                            <input type="checkbox" name="servicios_basicos[]" value="luz">
-                            Luz
-                        </label>
+                            <label>
+                                <input type="checkbox" name="servicios_basicos[]" value="gas">
+                                Gas
+                            </label>
 
 
-                    </div>
+                            <label>
+                                <input type="checkbox" name="servicios_basicos[]" value="luz">
+                                Luz
+                            </label>
 
 
-                    <!-- ==========================================
+                        </div>
+
+
+                        <!-- ==========================================
          6.3 ESTRATO
     =========================================== -->
 
-                    <div>
+                        <div>
 
-                        <h3>
-                            ¿Qué estrato figura en los servicios públicos
-                            de la vivienda?
-                        </h3>
+                            <h3>
+                                ¿Qué estrato figura en los servicios públicos
+                                de la vivienda?
+                            </h3>
 
-                        <label for="estrato_vivienda">
-                            Estrato
-                        </label>
+                            <label for="estrato_vivienda">
+                                Estrato
+                            </label>
 
-                        <select id="estrato_vivienda" name="estrato_vivienda">
+                            <select id="estrato_vivienda" name="estrato_vivienda">
 
-                            <option value="">
-                                Seleccione una opción
-                            </option>
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
 
-                            <option value="1">
-                                1
-                            </option>
+                                <option value="1">
+                                    1
+                                </option>
 
-                            <option value="2">
-                                2
-                            </option>
+                                <option value="2">
+                                    2
+                                </option>
 
-                            <option value="3">
-                                3
-                            </option>
+                                <option value="3">
+                                    3
+                                </option>
 
-                            <option value="4">
-                                4
-                            </option>
+                                <option value="4">
+                                    4
+                                </option>
 
-                            <option value="5">
-                                5
-                            </option>
+                                <option value="5">
+                                    5
+                                </option>
 
-                            <option value="6">
-                                6
-                            </option>
+                                <option value="6">
+                                    6
+                                </option>
 
-                            <option value="no_estratificada">
-                                No está estratificada
-                            </option>
+                                <option value="no_estratificada">
+                                    No está estratificada
+                                </option>
 
-                            <option value="no_sabe">
-                                No sabe
-                            </option>
+                                <option value="no_sabe">
+                                    No sabe
+                                </option>
 
-                        </select>
+                            </select>
 
-                    </div>
+                        </div>
 
 
-                    <!-- ==========================================
+                        <!-- ==========================================
          6.4 HABITACIONES PARA DORMIR
     =========================================== -->
 
-                    <div>
+                        <div>
 
-                        <h3>
-                            ¿Cuántas habitaciones se utilizan para dormir?
-                        </h3>
+                            <h3>
+                                ¿Cuántas habitaciones se utilizan para dormir?
+                            </h3>
 
-                        <label for="habitaciones_dormir">
-                            Habitaciones
-                        </label>
+                            <label for="habitaciones_dormir">
+                                Habitaciones
+                            </label>
 
-                        <input type="number" id="habitaciones_dormir" name="habitaciones_dormir" min="0"
-                            placeholder="Ingrese la cantidad">
+                            <input type="number" id="habitaciones_dormir" name="habitaciones_dormir" min="0"
+                                placeholder="Ingrese la cantidad">
 
-                    </div>
+                        </div>
 
 
-                    <!-- ==========================================
+                        <!-- ==========================================
          6.5 DÓNDE DUERME EL NIÑO O LA NIÑA
     =========================================== -->
 
-                    <div>
+                        <div>
 
-                        <h3>
-                            ¿Dónde duerme el niño o la niña la mayoría
-                            de las noches?
-                        </h3>
+                            <h3>
+                                ¿Dónde duerme el niño o la niña la mayoría
+                                de las noches?
+                            </h3>
 
-                        <label for="donde_duerme_nino">
-                            Situación para dormir
-                        </label>
+                            <label for="donde_duerme_nino">
+                                Situación para dormir
+                            </label>
 
-                        <select id="donde_duerme_nino" name="donde_duerme_nino">
+                            <select id="donde_duerme_nino" name="donde_duerme_nino">
 
-                            <option value="">
-                                Seleccione una opción
-                            </option>
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
 
-                            <option value="cuarto_propio">
-                                Cuarto propio
-                            </option>
+                                <option value="cuarto_propio">
+                                    Cuarto propio
+                                </option>
 
-                            <option value="cuarto_compartido_cama_propia">
-                                Cuarto compartido y cama propia
-                            </option>
+                                <option value="cuarto_compartido_cama_propia">
+                                    Cuarto compartido y cama propia
+                                </option>
 
-                            <option value="cama_compartida">
-                                Cama compartida
-                            </option>
+                                <option value="cama_compartida">
+                                    Cama compartida
+                                </option>
 
-                            <option value="cambia_con_frecuencia">
-                                Cambia con frecuencia
-                            </option>
+                                <option value="cambia_con_frecuencia">
+                                    Cambia con frecuencia
+                                </option>
 
-                            <option value="otra_situacion">
-                                Otra situación
-                            </option>
+                                <option value="otra_situacion">
+                                    Otra situación
+                                </option>
 
-                            <option value="prefiere_no_responder">
-                                Prefiere no responder
-                            </option>
+                                <option value="prefiere_no_responder">
+                                    Prefiere no responder
+                                </option>
 
-                        </select>
+                            </select>
 
-                    </div>
+                        </div>
 
 
-                    <!-- ==========================================
+                        <!-- ==========================================
          6.6 POSIBLE MUDANZA
     =========================================== -->
 
-                    <div>
+                        <div>
 
-                        <h3>
-                            ¿Cree que la familia podría tener que mudarse
-                            en los próximos seis meses por motivos que no
-                            puede controlar?
-                        </h3>
-
-
-                        <label>
-                            <input type="radio" name="posible_mudanza_seis_meses" value="si">
-                            Sí
-                        </label>
+                            <h3>
+                                ¿Cree que la familia podría tener que mudarse
+                                en los próximos seis meses por motivos que no
+                                puede controlar?
+                            </h3>
 
 
-                        <label>
-                            <input type="radio" name="posible_mudanza_seis_meses" value="no">
-                            No
-                        </label>
+                            <label>
+                                <input type="radio" name="posible_mudanza_seis_meses" value="si">
+                                Sí
+                            </label>
 
 
-                        <label>
-                            <input type="radio" name="posible_mudanza_seis_meses" value="no_sabe">
-                            No sabe
-                        </label>
+                            <label>
+                                <input type="radio" name="posible_mudanza_seis_meses" value="no">
+                                No
+                            </label>
 
 
-                        <label>
-                            <input type="radio" name="posible_mudanza_seis_meses" value="prefiere_no_responder">
-                            Prefiere no responder
-                        </label>
-
-                    </div>
+                            <label>
+                                <input type="radio" name="posible_mudanza_seis_meses" value="no_sabe">
+                                No sabe
+                            </label>
 
 
-                    <!-- ==========================================
+                            <label>
+                                <input type="radio" name="posible_mudanza_seis_meses" value="prefiere_no_responder">
+                                Prefiere no responder
+                            </label>
+
+                        </div>
+
+
+                        <!-- ==========================================
          6.7 ACCESO A INTERNET
     =========================================== -->
 
-                    <div>
+                        <div>
 
-                        <h3>
-                            ¿Con qué frecuencia hay acceso a internet en casa?
-                        </h3>
+                            <h3>
+                                ¿Con qué frecuencia hay acceso a internet en casa?
+                            </h3>
 
-                        <label for="frecuencia_internet">
-                            Acceso a internet
-                        </label>
+                            <label for="frecuencia_internet">
+                                Acceso a internet
+                            </label>
 
-                        <select id="frecuencia_internet" name="frecuencia_internet">
+                            <select id="frecuencia_internet" name="frecuencia_internet">
 
-                            <option value="">
-                                Seleccione una opción
-                            </option>
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
 
-                            <option value="mayoria_dias">
-                                La mayoría de los días
-                            </option>
+                                <option value="mayoria_dias">
+                                    La mayoría de los días
+                                </option>
 
-                            <option value="a_veces_recargas">
-                                A veces o mediante recargas
-                            </option>
+                                <option value="a_veces_recargas">
+                                    A veces o mediante recargas
+                                </option>
 
-                            <option value="sin_acceso">
-                                Sin acceso
-                            </option>
+                                <option value="sin_acceso">
+                                    Sin acceso
+                                </option>
 
-                            <option value="no_sabe">
-                                No sabe
-                            </option>
+                                <option value="no_sabe">
+                                    No sabe
+                                </option>
 
-                        </select>
+                            </select>
 
-                    </div>
+                        </div>
 
 
-                    <!-- ==========================================
+                        <!-- ==========================================
          6.8 DIFICULTADES PARA PAGAR NECESIDADES
     =========================================== -->
 
-                    <div>
+                        <div>
 
-                        <h3>
-                            En los últimos 30 días, ¿con qué frecuencia fue
-                            difícil para la familia pagar alimentación,
-                            arriendo, servicios públicos o transporte?
-                        </h3>
+                            <h3>
+                                En los últimos 30 días, ¿con qué frecuencia fue
+                                difícil para la familia pagar alimentación,
+                                arriendo, servicios públicos o transporte?
+                            </h3>
 
-                        <label for="dificultad_pago_necesidades">
-                            Frecuencia
-                        </label>
+                            <label for="dificultad_pago_necesidades">
+                                Frecuencia
+                            </label>
 
-                        <select id="dificultad_pago_necesidades" name="dificultad_pago_necesidades">
+                            <select id="dificultad_pago_necesidades" name="dificultad_pago_necesidades">
 
-                            <option value="">
-                                Seleccione una opción
-                            </option>
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
 
-                            <option value="nunca">
-                                Nunca
-                            </option>
+                                <option value="nunca">
+                                    Nunca
+                                </option>
 
-                            <option value="1_3_dias">
-                                1 a 3 días
-                            </option>
+                                <option value="1_3_dias">
+                                    1 a 3 días
+                                </option>
 
-                            <option value="1_2_dias_semana">
-                                1 a 2 días por semana
-                            </option>
+                                <option value="1_2_dias_semana">
+                                    1 a 2 días por semana
+                                </option>
 
-                            <option value="3_5_dias_semana">
-                                3 a 5 días por semana
-                            </option>
+                                <option value="3_5_dias_semana">
+                                    3 a 5 días por semana
+                                </option>
 
-                            <option value="casi_todos_los_dias">
-                                Casi todos los días
-                            </option>
+                                <option value="casi_todos_los_dias">
+                                    Casi todos los días
+                                </option>
 
-                            <option value="prefiere_no_responder">
-                                Prefiere no responder
-                            </option>
+                                <option value="prefiere_no_responder">
+                                    Prefiere no responder
+                                </option>
 
-                        </select>
+                            </select>
 
-                    </div>
+                        </div>
 
 
-                    <!-- ==========================================
+                        <!-- ==========================================
          6.9 INSEGURIDAD ALIMENTARIA
     =========================================== -->
 
-                    <div>
+                        <div>
 
-                        <h3>
-                            En los últimos 30 días, ¿alguna persona del hogar
-                            dejó de comer antes de quedar satisfecha porque
-                            no había suficientes alimentos?
-                        </h3>
+                            <h3>
+                                En los últimos 30 días, ¿alguna persona del hogar
+                                dejó de comer antes de quedar satisfecha porque
+                                no había suficientes alimentos?
+                            </h3>
 
-                        <label for="dejo_comer_antes_satisfecha">
-                            Frecuencia
-                        </label>
+                            <label for="dejo_comer_antes_satisfecha">
+                                Frecuencia
+                            </label>
 
-                        <select id="dejo_comer_antes_satisfecha" name="dejo_comer_antes_satisfecha">
+                            <select id="dejo_comer_antes_satisfecha" name="dejo_comer_antes_satisfecha">
 
-                            <option value="">
-                                Seleccione una opción
-                            </option>
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
 
-                            <option value="nunca">
-                                Nunca
-                            </option>
+                                <option value="nunca">
+                                    Nunca
+                                </option>
 
-                            <option value="1_3_dias">
-                                1 a 3 días
-                            </option>
+                                <option value="1_3_dias">
+                                    1 a 3 días
+                                </option>
 
-                            <option value="1_2_dias_semana">
-                                1 a 2 días por semana
-                            </option>
+                                <option value="1_2_dias_semana">
+                                    1 a 2 días por semana
+                                </option>
 
-                            <option value="3_5_dias_semana">
-                                3 a 5 días por semana
-                            </option>
+                                <option value="3_5_dias_semana">
+                                    3 a 5 días por semana
+                                </option>
 
-                            <option value="casi_todos_los_dias">
-                                Casi todos los días
-                            </option>
+                                <option value="casi_todos_los_dias">
+                                    Casi todos los días
+                                </option>
 
-                            <option value="prefiere_no_responder">
-                                Prefiere no responder
-                            </option>
+                                <option value="prefiere_no_responder">
+                                    Prefiere no responder
+                                </option>
 
-                        </select>
+                            </select>
 
-                    </div>
+                        </div>
 
 
-                    <!-- ==========================================
+                        <!-- ==========================================
          6.10 CONDICIONES DE LA VIVIENDA
          REGISTRAR CADA SITUACIÓN POR SEPARADO
     =========================================== -->
 
-                    <div>
-
-                        <h3>
-                            Condiciones de la vivienda en los últimos 12 meses
-                        </h3>
-
-                        <p>
-                            En los últimos 12 meses, ¿la vivienda presentó
-                            alguna de las siguientes situaciones?
-                        </p>
-
-
-                        <!-- Humedad o moho -->
-
                         <div>
 
-                            <label for="humedad_moho">
-                                Humedad o moho
-                            </label>
+                            <h3>
+                                Condiciones de la vivienda en los últimos 12 meses
+                            </h3>
 
-                            <select id="humedad_moho" name="humedad_moho">
+                            <p>
+                                En los últimos 12 meses, ¿la vivienda presentó
+                                alguna de las siguientes situaciones?
+                            </p>
 
-                                <option value="">
-                                    Seleccione una opción
-                                </option>
 
-                                <option value="si">
-                                    Sí
-                                </option>
+                            <!-- Humedad o moho -->
 
-                                <option value="no">
-                                    No
-                                </option>
+                            <div>
 
-                                <option value="no_sabe">
-                                    No sabe
-                                </option>
+                                <label for="humedad_moho">
+                                    Humedad o moho
+                                </label>
 
-                            </select>
+                                <select id="humedad_moho" name="humedad_moho">
+
+                                    <option value="">
+                                        Seleccione una opción
+                                    </option>
+
+                                    <option value="si">
+                                        Sí
+                                    </option>
+
+                                    <option value="no">
+                                        No
+                                    </option>
+
+                                    <option value="no_sabe">
+                                        No sabe
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- Gotera -->
+
+                            <div>
+
+                                <label for="goteras">
+                                    Gotera
+                                </label>
+
+                                <select id="goteras" name="goteras">
+
+                                    <option value="">
+                                        Seleccione una opción
+                                    </option>
+
+                                    <option value="si">
+                                        Sí
+                                    </option>
+
+                                    <option value="no">
+                                        No
+                                    </option>
+
+                                    <option value="no_sabe">
+                                        No sabe
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- Inundación -->
+
+                            <div>
+
+                                <label for="inundacion">
+                                    Inundación
+                                </label>
+
+                                <select id="inundacion" name="inundacion">
+
+                                    <option value="">
+                                        Seleccione una opción
+                                    </option>
+
+                                    <option value="si">
+                                        Sí
+                                    </option>
+
+                                    <option value="no">
+                                        No
+                                    </option>
+
+                                    <option value="no_sabe">
+                                        No sabe
+                                    </option>
+
+                                </select>
+
+                            </div>
 
                         </div>
 
 
-                        <!-- Gotera -->
-
-                        <div>
-
-                            <label for="goteras">
-                                Gotera
-                            </label>
-
-                            <select id="goteras" name="goteras">
-
-                                <option value="">
-                                    Seleccione una opción
-                                </option>
-
-                                <option value="si">
-                                    Sí
-                                </option>
-
-                                <option value="no">
-                                    No
-                                </option>
-
-                                <option value="no_sabe">
-                                    No sabe
-                                </option>
-
-                            </select>
-
-                        </div>
-
-
-                        <!-- Inundación -->
-
-                        <div>
-
-                            <label for="inundacion">
-                                Inundación
-                            </label>
-
-                            <select id="inundacion" name="inundacion">
-
-                                <option value="">
-                                    Seleccione una opción
-                                </option>
-
-                                <option value="si">
-                                    Sí
-                                </option>
-
-                                <option value="no">
-                                    No
-                                </option>
-
-                                <option value="no_sabe">
-                                    No sabe
-                                </option>
-
-                            </select>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- ==========================================
+                        <!-- ==========================================
          6.11 CONDICIONES AMBIENTALES
          REGISTRAR CADA SITUACIÓN POR SEPARADO
     =========================================== -->
 
-                    <div>
-
-                        <h3>
-                            Condiciones ambientales en las últimas 4 semanas
-                        </h3>
-
-                        <p>
-                            En las últimas 4 semanas, ¿con qué frecuencia se
-                            presentaron las siguientes situaciones?
-                        </p>
-
-
-                        <!-- Insectos o roedores -->
-
                         <div>
 
-                            <label for="insectos_roedores">
-                                Insectos o roedores
-                            </label>
+                            <h3>
+                                Condiciones ambientales en las últimas 4 semanas
+                            </h3>
 
-                            <select id="insectos_roedores" name="insectos_roedores">
+                            <p>
+                                En las últimas 4 semanas, ¿con qué frecuencia se
+                                presentaron las siguientes situaciones?
+                            </p>
 
-                                <option value="">
-                                    Seleccione una opción
-                                </option>
 
-                                <option value="nunca">
-                                    Nunca
-                                </option>
+                            <!-- Insectos o roedores -->
 
-                                <option value="1_3_dias">
-                                    1 a 3 días
-                                </option>
+                            <div>
 
-                                <option value="1_2_dias_semana">
-                                    1 a 2 días por semana
-                                </option>
+                                <label for="insectos_roedores">
+                                    Insectos o roedores
+                                </label>
 
-                                <option value="3_5_dias_semana">
-                                    3 a 5 días por semana
-                                </option>
+                                <select id="insectos_roedores" name="insectos_roedores">
 
-                                <option value="casi_todos_los_dias">
-                                    Casi todos los días
-                                </option>
+                                    <option value="">
+                                        Seleccione una opción
+                                    </option>
 
-                                <option value="no_sabe">
-                                    No sabe
-                                </option>
+                                    <option value="nunca">
+                                        Nunca
+                                    </option>
 
-                            </select>
+                                    <option value="1_3_dias">
+                                        1 a 3 días
+                                    </option>
+
+                                    <option value="1_2_dias_semana">
+                                        1 a 2 días por semana
+                                    </option>
+
+                                    <option value="3_5_dias_semana">
+                                        3 a 5 días por semana
+                                    </option>
+
+                                    <option value="casi_todos_los_dias">
+                                        Casi todos los días
+                                    </option>
+
+                                    <option value="no_sabe">
+                                        No sabe
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- Humo dentro de la vivienda -->
+
+                            <div>
+
+                                <label for="humo_vivienda">
+                                    Humo dentro de la vivienda
+                                </label>
+
+                                <select id="humo_vivienda" name="humo_vivienda">
+
+                                    <option value="">
+                                        Seleccione una opción
+                                    </option>
+
+                                    <option value="nunca">
+                                        Nunca
+                                    </option>
+
+                                    <option value="1_3_dias">
+                                        1 a 3 días
+                                    </option>
+
+                                    <option value="1_2_dias_semana">
+                                        1 a 2 días por semana
+                                    </option>
+
+                                    <option value="3_5_dias_semana">
+                                        3 a 5 días por semana
+                                    </option>
+
+                                    <option value="casi_todos_los_dias">
+                                        Casi todos los días
+                                    </option>
+
+                                    <option value="no_sabe">
+                                        No sabe
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- Calor que dificulta el sueño -->
+
+                            <div>
+
+                                <label for="calor_dificulta_sueno">
+                                    Calor que dificultara el sueño
+                                </label>
+
+                                <select id="calor_dificulta_sueno" name="calor_dificulta_sueno">
+
+                                    <option value="">
+                                        Seleccione una opción
+                                    </option>
+
+                                    <option value="nunca">
+                                        Nunca
+                                    </option>
+
+                                    <option value="1_3_dias">
+                                        1 a 3 días
+                                    </option>
+
+                                    <option value="1_2_dias_semana">
+                                        1 a 2 días por semana
+                                    </option>
+
+                                    <option value="3_5_dias_semana">
+                                        3 a 5 días por semana
+                                    </option>
+
+                                    <option value="casi_todos_los_dias">
+                                        Casi todos los días
+                                    </option>
+
+                                    <option value="no_sabe">
+                                        No sabe
+                                    </option>
+
+                                </select>
+
+                            </div>
 
                         </div>
-
-
-                        <!-- Humo dentro de la vivienda -->
-
-                        <div>
-
-                            <label for="humo_vivienda">
-                                Humo dentro de la vivienda
-                            </label>
-
-                            <select id="humo_vivienda" name="humo_vivienda">
-
-                                <option value="">
-                                    Seleccione una opción
-                                </option>
-
-                                <option value="nunca">
-                                    Nunca
-                                </option>
-
-                                <option value="1_3_dias">
-                                    1 a 3 días
-                                </option>
-
-                                <option value="1_2_dias_semana">
-                                    1 a 2 días por semana
-                                </option>
-
-                                <option value="3_5_dias_semana">
-                                    3 a 5 días por semana
-                                </option>
-
-                                <option value="casi_todos_los_dias">
-                                    Casi todos los días
-                                </option>
-
-                                <option value="no_sabe">
-                                    No sabe
-                                </option>
-
-                            </select>
-
-                        </div>
-
-
-                        <!-- Calor que dificulta el sueño -->
-
-                        <div>
-
-                            <label for="calor_dificulta_sueno">
-                                Calor que dificultara el sueño
-                            </label>
-
-                            <select id="calor_dificulta_sueno" name="calor_dificulta_sueno">
-
-                                <option value="">
-                                    Seleccione una opción
-                                </option>
-
-                                <option value="nunca">
-                                    Nunca
-                                </option>
-
-                                <option value="1_3_dias">
-                                    1 a 3 días
-                                </option>
-
-                                <option value="1_2_dias_semana">
-                                    1 a 2 días por semana
-                                </option>
-
-                                <option value="3_5_dias_semana">
-                                    3 a 5 días por semana
-                                </option>
-
-                                <option value="casi_todos_los_dias">
-                                    Casi todos los días
-                                </option>
-
-                                <option value="no_sabe">
-                                    No sabe
-                                </option>
-
-                            </select>
-
-                        </div>
-
-                    </div>
 
                 </details>
 
@@ -4837,10 +4889,47 @@
                         </select>
 
                     </div>
+                                        <!-- ==========================================
+         9.4 PREOCUPACION PORQUE SE ACABEN LOS ALIMENTOS
+    =========================================== -->
+                    <div>
+                        
+                        <h3>
+                            ¿Se preocupa porque se acaben los alimentos?
+                        </h3>
+
+                        <select id="preocupacion_alimentos" name="preocupacion_alimentos">
+
+                            <option value="">
+                                Seleccione una opción
+                            </option>
+
+                            <option value="no">
+                                No
+                            </option>
+
+                            <option value="un_poco">
+                                Un poco
+                            </option>
+
+                            <option value="moderadamente">
+                                Moderadamente
+                            </option>
+
+                            <option value="mucho">
+                                Mucho
+                            </option>
+
+                            <option value="no_sabe">
+                                No sabe
+                            </option>
+
+                        </select>
+                    </div>
 
 
                     <!-- ==========================================
-         9.4 ACTIVIDAD FÍSICA Y JUEGO AL AIRE LIBRE
+         9.5 ACTIVIDAD FÍSICA Y JUEGO AL AIRE LIBRE
     =========================================== -->
 
                     <div>
@@ -4876,7 +4965,7 @@
 
 
                     <!-- ==========================================
-         9.5 TIEMPO DE PANTALLAS
+         9.6 TIEMPO DE PANTALLAS
     =========================================== -->
 
                     <div>
@@ -4928,7 +5017,7 @@
 
 
                     <!-- ==========================================
-         9.6 SUEÑO
+         9.7 SUEÑO
     =========================================== -->
 
                     <div>
@@ -4973,7 +5062,7 @@
 
 
                     <!-- ==========================================
-         9.7 HORARIOS DE SUEÑO
+         9.8 HORARIOS DE SUEÑO
     =========================================== -->
 
                     <div>
@@ -5011,7 +5100,7 @@
 
 
                     <!-- ==========================================
-         9.8 MEDICAMENTOS O SUPLEMENTOS PARA DORMIR
+         9.9 MEDICAMENTOS O SUPLEMENTOS PARA DORMIR
     =========================================== -->
 
                     <div>
