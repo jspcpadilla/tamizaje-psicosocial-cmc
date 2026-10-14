@@ -104,273 +104,454 @@
                             <input type="date" id="fecha_aplicacion" name="fecha_aplicacion">
 
                         </div>
+                        <div>
 
-                    </div>
+                            <label for="aplicacion_encuesta">
+                                ¿Cómo se está respondiendo este cuestionario?
+                            </label>
+
+                            <select id="aplicacion_encuesta" name="aplicacion_encuesta">
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+                                <option value="La_persona_cuidadora_lo_respondesola">
+                                    La persona cuidadora lo responde sola
+                                </option>
+                                <option value="La_persona_cuidadora_lo_responde_con_apoyo_de_lectura">
+                                    La persona cuidadora lo responde con apoyo de lectura
+                                </option>
+                                <option value="Una_persona_del_equipo_formula_las_preguntas_y_registra_las_respuestas">
+                                    Una persona del equipo formula las preguntas y registra las respuestas
+                                </option>
+                            </select>
+
+                        </div>
 
 
-                    <!-- ==========================================
+                        <!-- ==========================================
          1.2 SEDE DE ATENCIÓN
     =========================================== -->
 
-                    <div>
+                        <div>
 
-                        <h3>
-                            Sede de atención
-                        </h3>
+                            <h3>
+                                Sede de atención
+                            </h3>
 
-                        <label for="sede_atencion">
-                            Sede de atención
-                        </label>
+                            <label for="sede_atencion">
+                                Sede de atención
+                            </label>
 
-                        <select id="sede_atencion" name="sede_atencion">
+                            <select id="sede_atencion" name="sede_atencion">
 
-                            <option value="">
-                                Seleccione una sede
-                            </option>
+                                <option value="">
+                                    Seleccione una sede
+                                </option>
 
-                            <option value="sede_15_soledad">
-                                Sede 15 Soledad
-                            </option>
+                                <option value="sede_15_soledad">
+                                    Sede 15 Soledad
+                                </option>
 
-                            <option value="sede_52_barranquilla">
-                                Sede 52 Barranquilla
-                            </option>
+                                <option value="sede_52_barranquilla">
+                                    Sede 52 Barranquilla
+                                </option>
 
-                        </select>
+                            </select>
 
-                    </div>
+                        </div>
 
 
-                    <!-- ==========================================
+                        <!-- ==========================================
          1.3 MOMENTO DE ATENCIÓN
     =========================================== -->
 
-                    <div>
+                        <div>
 
-                        <h3>
-                            Momento de atención
-                        </h3>
+                            <h3>
+                                Momento de atención
+                            </h3>
 
-                        <label for="momento_atencion">
-                            Momento de atención
-                        </label>
+                            <label for="momento_atencion">
+                                Momento de atención
+                            </label>
 
-                        <select id="momento_atencion" name="momento_atencion">
+                            <select id="momento_atencion" name="momento_atencion">
 
-                            <option value="">
-                                Seleccione el momento de atención
-                            </option>
+                                <option value="">
+                                    Seleccione el momento de atención
+                                </option>
 
-                            <option value="linea_base">
-                                Línea Base
-                            </option>
+                                <option value="linea_base">
+                                    Línea Base
+                                </option>
 
-                            <option value="seguimiento_1">
-                                Seguimiento 1
-                            </option>
+                                <option value="seguimiento_1">
+                                    Seguimiento 1
+                                </option>
 
-                            <option value="seguimiento_2">
-                                Seguimiento 2
-                            </option>
+                                <option value="seguimiento_2">
+                                    Seguimiento 2
+                                </option>
 
-                            <option value="postintervencion">
-                                Postintervención
-                            </option>
+                                <option value="postintervencion">
+                                    Postintervención
+                                </option>
 
-                            <option value="seguimiento_anual">
-                                Seguimiento anual
-                            </option>
+                                <option value="seguimiento_anual">
+                                    Seguimiento anual
+                                </option>
 
-                        </select>
+                            </select>
 
-                    </div>
+                        </div>
 
 
-                    <!-- ==========================================
+                        <!-- ==========================================
          1.4 NOMBRE Y FECHA DE NACIMIENTO Y SEXO DEL NIÑO O LA NIÑA
     =========================================== -->
 
-                    <div>
-
-                        <h3>
-                            Información del niño o la niña
-                        </h3>
-
                         <div>
 
-                            <label for="nombre_completo">
-                                Nombre completo del niño o la niña
-                            </label>
+                            <h3>
+                                Información del niño o la niña
+                            </h3>
 
-                            <input type="text" id="nombre_completo" name="nombre_completo"
-                                placeholder="Ingrese el nombre completo">
+                            <div>
+
+                                <label for="nombre_completo">
+                                    Nombre completo del niño o la niña
+                                </label>
+
+                                <input type="text" id="nombre_completo" name="nombre_completo"
+                                    placeholder="Ingrese el nombre completo">
+
+                            </div>
+
+
+                            <div>
+
+                                <label for="fecha_nacimiento">
+                                    Fecha de nacimiento
+                                </label>
+
+                                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+
+                            </div>
+
+                            <div>
+
+                                <label for="sexo">
+                                    Sexo
+                                </label>
+
+                                <select id="sexo" name="sexo">
+
+                                    <option value="">
+                                        Seleccione el sexo
+                                    </option>
+
+                                    <option value="masculino">
+                                        Masculino
+                                    </option>
+
+                                    <option value="femenino">
+                                        Femenino
+                                    </option>
+
+                                </select>
+
+                            </div>
 
                         </div>
 
 
-                        <div>
-
-                            <label for="fecha_nacimiento">
-                                Fecha de nacimiento
-                            </label>
-
-                            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
-
-                        </div>
-
-                        <div>
-
-                            <label for="sexo">
-                                Sexo
-                            </label>
-
-                            <select id="sexo" name="sexo">
-
-                                <option value="">
-                                    Seleccione el sexo
-                                </option>
-
-                                <option value="masculino">
-                                    Masculino
-                                </option>
-
-                                <option value="femenino">
-                                    Femenino
-                                </option>
-
-                            </select>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- ==========================================
+                        <!-- ==========================================
          1.5 TIPO Y NÚMERO DE IDENTIFICACIÓN
     =========================================== -->
 
-                    <div>
-
-                        <h3>
-                            Tipo y número de identificación
-                        </h3>
-
                         <div>
 
-                            <label for="tipo_identificacion">
-                                Tipo de identificación
-                            </label>
+                            <h3>
+                                Tipo y número de identificación
+                            </h3>
 
-                            <select id="tipo_identificacion" name="tipo_identificacion">
+                            <div>
 
-                                <option value="">
-                                    Seleccione un tipo de identificación
-                                </option>
+                                <label for="tipo_identificacion">
+                                    Tipo de identificación
+                                </label>
 
-                                <option value="rc">
-                                    Registro civil
-                                </option>
+                                <select id="tipo_identificacion" name="tipo_identificacion">
 
-                                <option value="ti">
-                                    Tarjeta de identidad
-                                </option>
+                                    <option value="">
+                                        Seleccione un tipo de identificación
+                                    </option>
 
-                                <option value="pt">
-                                    Permiso por protección temporal
-                                </option>
+                                    <option value="rc">
+                                        Registro civil
+                                    </option>
 
-                            </select>
+                                    <option value="ti">
+                                        Tarjeta de identidad
+                                    </option>
+
+                                    <option value="pt">
+                                        Permiso por protección temporal
+                                    </option>
+
+                                </select>
+                            </div>
+
+
+                            <div>
+
+                                <label for="numero_identificacion">
+                                    Número de identificación
+                                </label>
+
+                                <input type="text" id="numero_identificacion" name="numero_identificacion"
+                                    placeholder="Ingrese el número de identificación">
+
+                            </div>
+
                         </div>
 
 
-                        <div>
-
-                            <label for="numero_identificacion">
-                                Número de identificación
-                            </label>
-
-                            <input type="text" id="numero_identificacion" name="numero_identificacion"
-                                placeholder="Ingrese el número de identificación">
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- ==========================================
+                        <!-- ==========================================
          1.6 CIUDAD, MUNICIPIO Y BARRIO
     =========================================== -->
 
-                    <div>
-
-                        <h3>
-                            Lugar de residencia
-                        </h3>
-
                         <div>
 
-                            <label for="ciudad_municipio">
-                                Ciudad o municipio donde vive actualmente
-                            </label>
+                            <h3>
+                                Lugar de residencia
+                            </h3>
 
-                            <input type="text" id="ciudad_municipio" name="ciudad_municipio"
-                                placeholder="Ingrese la ciudad o municipio">
+                            <div>
+
+                                <label for="ciudad_municipio">
+                                    Ciudad o municipio donde vive actualmente
+                                </label>
+
+                                <input type="text" id="ciudad_municipio" name="ciudad_municipio"
+                                    placeholder="Ingrese la ciudad o municipio">
+
+                            </div>
+
+
+                            <div>
+
+                                <label for="barrio">
+                                    Barrio
+                                </label>
+
+                                <input type="text" id="barrio" name="barrio" placeholder="Ingrese el barrio">
+
+                            </div>
 
                         </div>
 
 
-                        <div>
-
-                            <label for="barrio">
-                                Barrio
-                            </label>
-
-                            <input type="text" id="barrio" name="barrio" placeholder="Ingrese el barrio">
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- ==========================================
+                        <!-- ==========================================
          1.7 GEOREFERENCIACIÓN POR BARRIO
     =========================================== -->
 
-                    <div>
+                        <div>
 
-                        <h3>
-                            Georreferenciación por barrio
-                        </h3>
+                            <h3>
+                                Georreferenciación por barrio
+                            </h3>
+
+                            <div>
+                                <label for="Georreferenciacion_barrio">
+                                    Localidad
+                                </label>
+
+                                <select id="Georreferenciacion_barrio" name="Georreferenciacion_barrio">
+
+                                    <option value="">
+                                        Seleccione una localidad
+                                    </option>
+
+                                    <option value="centro_norte_historico">
+                                        Centro Norte Histórico
+                                    </option>
+
+                                    <option value="riomar">
+                                        Ríomar
+                                    </option>
+
+                                    <option value="suroriente">
+                                        Suroriente
+                                    </option>
+
+                                    <option value="suroccidente">
+                                        Suroccidente
+                                    </option>
+
+                                    <option value="metropolitana">
+                                        Metropolitana
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                        </div>
+
+
+                        <!-- ==========================================
+         1.8 PERSONA QUE RESPONDE
+    =========================================== -->
 
                         <div>
-                            <label for="Georreferenciacion_barrio">
-                                Localidad
+
+                            <h3>
+                                Persona que responde
+                            </h3>
+
+                            <div>
+
+                                <label for="nombre_responde">
+                                    Nombre completo de quien responde
+                                </label>
+
+                                <input type="text" id="nombre_responde" name="nombre_responde"
+                                    placeholder="Ingrese el nombre completo">
+
+                            </div>
+
+
+                            <div>
+
+                                <label for="parentesco">
+                                    Parentesco con el niño o la niña
+                                </label>
+
+                                <select id="parentesco" name="parentesco" placeholder="Ingrese el parentesco">
+
+                                    <option value="">
+                                        Seleccione una opción
+                                    </option>
+
+                                    <option value="padre">
+                                        Padre
+                                    </option>
+
+                                    <option value="madre">
+                                        Madre
+                                    </option>
+
+                                    <option value="abuela_o_abuelo">
+                                        Abuela o abuelo
+                                    </option>
+
+                                    <option value="otra_persona_cuidadora_principal">
+                                        Otra persona cuidadora principal
+                                    </option>
+
+                                    <option value="prefiere_no_responder">
+                                        Prefiere no responder
+                                    </option>
+
+                                </select>
+
+                            </div>
+                            <div>
+
+                                <h3>
+                                    Ocupación de la persona cuidadora principal
+                                </h3>
+
+                                <label for="ocupacion_cuidador">
+                                    Ocupación de la persona cuidadora principal
+                                </label>
+
+                                <input type="text" id="ocupacion_cuidador" name="ocupacion_cuidador"
+                                    placeholder="Ingrese la ocupación">
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- ==========================================
+         1.9 CELULARES
+    =========================================== -->
+
+                        <div>
+
+                            <h3>
+                                Datos de contacto
+                            </h3>
+
+                            <div>
+
+                                <label for="celular_principal">
+                                    Celular principal
+                                </label>
+
+                                <input type="tel" id="celular_principal" name="celular_principal"
+                                    placeholder="Ingrese el celular principal">
+
+                                <label for="email">
+                                    Correo electrónico
+                                </label>
+
+                                <input type="email" id="email" name="email" placeholder="Ingrese el correo electrónico">
+
+                            </div>
+
+
+                            <div>
+
+                                <label for="celular_respaldo">
+                                    Celular de respaldo
+                                </label>
+
+                                <input type="tel" id="celular_respaldo" name="celular_respaldo"
+                                    placeholder="Ingrese el celular de respaldo">
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- ==========================================
+         1.10 RÉGIMEN DE AFILIACIÓN EN SALUD
+    =========================================== -->
+
+                        <div>
+
+                            <h3>
+                                Régimen de afiliación en salud
+                            </h3>
+
+                            <label for="regimen_salud">
+                                Régimen de afiliación en salud
                             </label>
 
-                            <select id="Georreferenciacion_barrio" name="Georreferenciacion_barrio">
+                            <select id="regimen_salud" name="regimen_salud">
 
                                 <option value="">
-                                    Seleccione una localidad
+                                    Seleccione una opción
                                 </option>
 
-                                <option value="centro_norte_historico">
-                                    Centro Norte Histórico
+                                <option value="subsidiado">
+                                    Subsidiado
                                 </option>
 
-                                <option value="rioamar">
-                                    Ríoamar
+                                <option value="contributivo">
+                                    Contributivo
                                 </option>
 
-                                <option value="suroriente">
-                                    Suroriente
+                                <option value="especial_excepcion">
+                                    Especial o de excepción
                                 </option>
 
-                                <option value="suroccidente">
-                                    Suroccidente
-                                </option>
-
-                                <option value="metropolitana">
-                                    Metropolitana
+                                <option value="no_sabe">
+                                    No sabe
                                 </option>
 
                             </select>
@@ -378,194 +559,73 @@
                         </div>
 
 
-                    </div>
-
-
-                    <!-- ==========================================
-         1.8 PERSONA QUE RESPONDE
-    =========================================== -->
-
-                    <div>
-
-                        <h3>
-                            Persona que responde
-                        </h3>
-
-                        <div>
-
-                            <label for="nombre_responde">
-                                Nombre completo de quien responde
-                            </label>
-
-                            <input type="text" id="nombre_responde" name="nombre_responde"
-                                placeholder="Ingrese el nombre completo">
-
-                        </div>
-
-
-                        <div>
-
-                            <label for="parentesco">
-                                Parentesco con el niño o la niña
-                            </label>
-
-                            <input type="text" id="parentesco" name="parentesco" placeholder="Ingrese el parentesco">
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- ==========================================
-         1.9 CELULARES
-    =========================================== -->
-
-                    <div>
-
-                        <h3>
-                            Datos de contacto
-                        </h3>
-
-                        <div>
-
-                            <label for="celular_principal">
-                                Celular principal
-                            </label>
-
-                            <input type="tel" id="celular_principal" name="celular_principal"
-                                placeholder="Ingrese el celular principal">
-
-                            <label for="email">
-                                Correo electrónico
-                            </label>
-
-                            <input type="email" id="email" name="email" placeholder="Ingrese el correo electrónico">
-
-                        </div>
-
-
-                        <div>
-
-                            <label for="celular_respaldo">
-                                Celular de respaldo
-                            </label>
-
-                            <input type="tel" id="celular_respaldo" name="celular_respaldo"
-                                placeholder="Ingrese el celular de respaldo">
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- ==========================================
-         1.10 RÉGIMEN DE AFILIACIÓN EN SALUD
-    =========================================== -->
-
-                    <div>
-
-                        <h3>
-                            Régimen de afiliación en salud
-                        </h3>
-
-                        <label for="regimen_salud">
-                            Régimen de afiliación en salud
-                        </label>
-
-                        <select id="regimen_salud" name="regimen_salud">
-
-                            <option value="">
-                                Seleccione una opción
-                            </option>
-
-                            <option value="subsidiado">
-                                Subsidiado
-                            </option>
-
-                            <option value="contributivo">
-                                Contributivo
-                            </option>
-
-                            <option value="especial_excepcion">
-                                Especial o de excepción
-                            </option>
-
-                            <option value="no_sabe">
-                                No sabe
-                            </option>
-
-                        </select>
-
-                    </div>
-
-
-                    <!-- ==========================================
+                        <!-- ==========================================
          1.11 GRUPO ÉTNICO
     =========================================== -->
 
-                    <div>
-
-                        <h3>
-                            Grupo étnico
-                        </h3>
-
-                        <p>
-                            ¿El niño o la niña pertenece a algún grupo étnico?
-                        </p>
-
-
                         <div>
 
-                            <label>
-                                <input type="radio" name="grupo_etnico" value="no">
-                                No
-                            </label>
+                            <h3>
+                                Grupo étnico
+                            </h3>
+
+                            <p>
+                                ¿El niño o la niña pertenece a algún grupo étnico?
+                            </p>
+
+
+                            <div>
+
+                                <label>
+                                    <input type="radio" name="grupo_etnico" value="no">
+                                    No
+                                </label>
+
+                            </div>
+
+
+                            <div>
+
+                                <label>
+                                    <input type="radio" name="grupo_etnico" value="si">
+                                    Sí
+                                </label>
+
+                            </div>
+
+
+                            <div>
+
+                                <label for="grupo_etnico_cual">
+                                    Si respondió sí, ¿cuál?
+                                </label>
+
+                                <input type="text" id="grupo_etnico_cual" name="grupo_etnico_cual"
+                                    placeholder="Especifique el grupo étnico">
+
+                            </div>
+
+
+                            <div>
+
+                                <label>
+                                    <input type="radio" name="grupo_etnico" value="no_sabe">
+                                    No sabe
+                                </label>
+
+                            </div>
+
+
+                            <div>
+
+                                <label>
+                                    <input type="radio" name="grupo_etnico" value="prefiere_no_responder">
+                                    Prefiere no responder
+                                </label>
+
+                            </div>
 
                         </div>
-
-
-                        <div>
-
-                            <label>
-                                <input type="radio" name="grupo_etnico" value="si">
-                                Sí
-                            </label>
-
-                        </div>
-
-
-                        <div>
-
-                            <label for="grupo_etnico_cual">
-                                Si respondió sí, ¿cuál?
-                            </label>
-
-                            <input type="text" id="grupo_etnico_cual" name="grupo_etnico_cual"
-                                placeholder="Especifique el grupo étnico">
-
-                        </div>
-
-
-                        <div>
-
-                            <label>
-                                <input type="radio" name="grupo_etnico" value="no_sabe">
-                                No sabe
-                            </label>
-
-                        </div>
-
-
-                        <div>
-
-                            <label>
-                                <input type="radio" name="grupo_etnico" value="prefiere_no_responder">
-                                Prefiere no responder
-                            </label>
-
-                        </div>
-
-                    </div>
 
 
                 </details>
@@ -671,7 +731,28 @@
                     <!-- ==========================================
          2.3 HERMANOS
     =========================================== -->
+                    <div>
 
+                        <h3>
+                            Codigo de familia
+                        </h3>
+
+                        <div>
+
+                            <label for="codigo_familia">
+                                Código de familia
+                            </label>
+
+                            <input type="text" id="codigo_familia" name="codigo_familia" placeholder="P.ej.FAM-001">
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ==========================================
+         2.4 HERMANOS
+    =========================================== -->
                     <div>
 
                         <h3>
@@ -815,20 +896,6 @@
 
                     </div>
 
-                    <div>
-
-                        <h3>
-                            Ocupación de la persona cuidadora principal
-                        </h3>
-
-                        <label for="ocupacion_cuidador">
-                            Ocupación de la persona cuidadora principal
-                        </label>
-
-                        <input type="text" id="ocupacion_cuidador" name="ocupacion_cuidador"
-                            placeholder="Ingrese la ocupación">
-
-                    </div>
 
 
                     <!-- ==========================================
@@ -2537,8 +2604,81 @@
                                 </select>
 
                             </div>
+                            <div>
 
-                        </div>
+                                <label for="contaminacion_aire">
+                                    Contaminación del aire
+                                </label>
+                                <select id="contaminacion_aire" name="contaminacion_aire">
+
+                                    <option value="">
+                                        Seleccione una opción
+                                    </option>
+
+                                    <option value="nunca">
+                                        Nunca
+                                    </option>
+
+                                    <option value="1_3_dias">
+                                        1 a 3 días
+                                    </option>
+
+                                    <option value="1_2_dias_semana">
+                                        1 a 2 días por semana
+                                    </option>
+
+                                    <option value="3_5_dias_semana">
+                                        3 a 5 días por semana
+                                    </option>
+
+                                    <option value="casi_todos_los_dias">
+                                        Casi todos los días
+                                    </option>
+
+                                    <option value="no_sabe">
+                                        No sabe
+                                    </option>
+
+                                </select>
+
+                            </div>
+                            <div>
+
+                                <label for="basura_acomulada">
+                                    Basura acomulada en la calle o en el barrio
+                                </label>
+                                <select id="basura_acomulada" name="basura_acomulada">
+
+                                    <option value="">
+                                        Seleccione una opción
+                                    </option>
+
+                                    <option value="nunca">
+                                        Nunca
+                                    </option>
+
+                                    <option value="1_3_dias">
+                                        1 a 3 días
+                                    </option>
+
+                                    <option value="1_2_dias_semana">
+                                        1 a 2 días por semana
+                                    </option>
+
+                                    <option value="3_5_dias_semana">
+                                        3 a 5 días por semana
+                                    </option>
+
+                                    <option value="casi_todos_los_dias">
+                                        Casi todos los días
+                                    </option>
+
+                                    <option value="no_sabe">
+                                        No sabe
+                                    </option>
+
+                                </select>
+                            </div>
 
                 </details>
 
@@ -3166,109 +3306,140 @@
 
                     </div>
 
-
-                    <!-- ==========================================
-         7.7 FUENTE PRINCIPAL DEL RUIDO
-    =========================================== -->
-
                     <div>
 
                         <h3>
-                            Si hubo ruido, ¿cuál fue su fuente principal?
+                            En las últimas 4 semanas, durante el día o la noche, ¿con qué frecuencia se escuchó dentro
+                            de la
+                            vivienda ruido fuerte que venía del exterior?
                         </h3>
-
-                        <label for="fuente_principal_ruido">
-                            Fuente principal
-                        </label>
-
-                        <select id="fuente_principal_ruido" name="fuente_principal_ruido">
-
+                        <select name="ruido_diurno" id="ruido_diurno">
                             <option value="">
                                 Seleccione una opción
                             </option>
-
-                            <option value="trafico">
-                                Tráfico
-                            </option>
-
-                            <option value="aviones">
-                                Aviones
-                            </option>
-
-                            <option value="construccion_industria">
-                                Construcción o industria
-                            </option>
-
-                            <option value="establecimientos">
-                                Establecimientos
-                            </option>
-
-                            <option value="vecinos_musica">
-                                Vecinos o música
-                            </option>
-
-                            <option value="animales">
-                                Animales
-                            </option>
-
-                            <option value="otra">
-                                Otra
-                            </option>
-
-                            <option value="no_sabe">
-                                No sabe
-                            </option>
-
-                            <option value="no_hubo_ruido">
-                                No hubo ruido
-                            </option>
-
-                        </select>
-
-                    </div>
-
-
-                    <!-- ==========================================
-         7.8 LUGAR TRANQUILO EN CASA
-    =========================================== -->
-
-                    <div>
-
-                        <h3>
-                            ¿Hay en casa un lugar suficientemente tranquilo
-                            para conversar, jugar o mirar libros con una
-                            persona adulta?
-                        </h3>
-
-                        <label for="lugar_tranquilo_casa">
-                            Frecuencia
-                        </label>
-
-                        <select id="lugar_tranquilo_casa" name="lugar_tranquilo_casa">
-
-                            <option value="">
-                                Seleccione una opción
-                            </option>
-
                             <option value="nunca">
                                 Nunca
                             </option>
-
-                            <option value="algunos_dias">
-                                Algunos días
+                            <option value="1_3_dias">
+                                1 a 3 días
                             </option>
-
-                            <option value="mayoria_dias">
-                                La mayoría de los días
+                            <option value="1_2_dias_semana">
+                                1 a 2 días por semana
                             </option>
-
+                            <option value="3_5_dias_semana">
+                                3 a 5 días por semana
+                            </option>
                             <option value="casi_todos_los_dias">
                                 Casi todos los días
                             </option>
-
+                            <option value="no_sabe">
+                                No sabe
+                            </option>
                         </select>
 
-                    </div>
+
+                        <!-- ==========================================
+         7.7 FUENTE PRINCIPAL DEL RUIDO
+    =========================================== -->
+
+                        <div>
+
+                            <h3>
+                                Si hubo ruido, ¿cuál fue su fuente principal?
+                            </h3>
+
+                            <label for="fuente_principal_ruido">
+                                Fuente principal
+                            </label>
+
+                            <select id="fuente_principal_ruido" name="fuente_principal_ruido">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="trafico">
+                                    Tráfico
+                                </option>
+
+                                <option value="aviones">
+                                    Aviones
+                                </option>
+
+                                <option value="construccion_industria">
+                                    Construcción o industria
+                                </option>
+
+                                <option value="establecimientos">
+                                    Establecimientos
+                                </option>
+
+                                <option value="vecinos_musica">
+                                    Vecinos o música
+                                </option>
+
+                                <option value="animales">
+                                    Animales
+                                </option>
+
+                                <option value="otra">
+                                    Otra
+                                </option>
+
+                                <option value="no_sabe">
+                                    No sabe
+                                </option>
+
+                                <option value="no_hubo_ruido">
+                                    No hubo ruido
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- ==========================================
+         7.8 LUGAR TRANQUILO EN CASA
+    =========================================== -->
+
+                        <div>
+
+                            <h3>
+                                ¿Hay en casa un lugar suficientemente tranquilo
+                                para conversar, jugar o mirar libros con una
+                                persona adulta?
+                            </h3>
+
+                            <label for="lugar_tranquilo_casa">
+                                Frecuencia
+                            </label>
+
+                            <select id="lugar_tranquilo_casa" name="lugar_tranquilo_casa">
+
+                                <option value="">
+                                    Seleccione una opción
+                                </option>
+
+                                <option value="nunca">
+                                    Nunca
+                                </option>
+
+                                <option value="algunos_dias">
+                                    Algunos días
+                                </option>
+
+                                <option value="mayoria_dias">
+                                    La mayoría de los días
+                                </option>
+
+                                <option value="casi_todos_los_dias">
+                                    Casi todos los días
+                                </option>
+
+                            </select>
+
+                        </div>
 
 
                 </details>
@@ -4862,6 +5033,16 @@
                         </span>
 
                     </div>
+                    <div>
+                        <h3>
+                            ¿Cuántos días por semana consume huevo, pescado, carne, pollo o lácteos?
+                        </h3>
+                        <input type="number" id="dias_huevo_pescado_carne_pollo_lacteos"
+                            name="dias_huevo_pescado_carne_pollo_lacteos" min="0" max="7" placeholder="0 a 7">
+                        <span>
+                            de 0 a 7 días
+                        </span>
+                    </div>
 
 
                     <!-- ==========================================
@@ -4909,7 +5090,8 @@
                     <div>
 
                         <h3>
-                            ¿Se preocupa porque se acaben los alimentos?
+                            Durante el último mes, ¿hubo algún momento en que faltaron alimentos suficientes en el
+                            hogar?
                         </h3>
 
                         <select id="preocupacion_alimentos" name="preocupacion_alimentos">
@@ -4922,20 +5104,16 @@
                                 No
                             </option>
 
-                            <option value="un_poco">
-                                Un poco
+                            <option value="una_o_dos_veces">
+                                Sí, una o dos veces
                             </option>
 
-                            <option value="moderadamente">
-                                Moderadamente
+                            <option value="varias_veces">
+                                Sí, varias veces
                             </option>
 
-                            <option value="mucho">
-                                Mucho
-                            </option>
-
-                            <option value="no_sabe">
-                                No sabe
+                            <option value="prefi">
+                                Prefiere no responder
                             </option>
 
                         </select>
@@ -4956,6 +5134,11 @@
                         <input type="number" id="dias_actividad_fisica" name="dias_actividad_fisica" min="0" max="7"
                             placeholder="0 a 7">
 
+                        <h3>
+                            Minutos aproximados de actividad física en un día habitual
+                        </h3>
+                        <input type="number" id="minutos_actividad_fisica" name="minutos_actividad_fisica" min="0"
+                            placeholder="Ingrese la cantidad en minutos">
 
                         <h3>
                             ¿Cuántos días jugó al aire libre?
@@ -5151,6 +5334,16 @@
 
                         </select>
 
+                    </div>
+                    <div>
+
+                        <h3>
+                            Pensando en la mayoría de las noches de los últimos 7 días, valore la calidad global del
+                            sueño.
+                        </h3>
+
+                        <input type="number" id="calidad_sueño" name="calidad_sueño" min="0" max="10"
+                            placeholder="Ingrese la calidad del sueño (0-10)">
                     </div>
 
 
